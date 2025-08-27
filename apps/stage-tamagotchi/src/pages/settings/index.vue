@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { IconItem } from '@proj-airi/stage-ui/components'
-import { useSettings } from '@proj-airi/stage-ui/stores/settings'
+import { IconItem } from '@proj-navi/stage-ui/components'
+import { useSettings } from '@proj-navi/stage-ui/stores/settings'
 import { computed, nextTick, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRouter } from 'vue-router'
@@ -64,7 +64,7 @@ const settings = computed(() => [
     title: t('settings.pages.card.title'),
     description: t('settings.pages.card.description'),
     icon: 'i-solar:emoji-funny-square-bold-duotone',
-    to: '/settings/airi-card',
+    to: '/settings/navi-card',
   },
   {
     title: t('settings.pages.modules.title'),

@@ -19,7 +19,7 @@ Twitter Service is a web automation service based on BrowserBase, providing stru
 │                                             │
 │   ┌────────────┐         ┌─────────────┐    │
 │   │            │         │             │    │
-│   │  AIRI Core │         │ Other LLM   │    │
+│   │  NAVI Core │         │ Other LLM   │    │
 │   │            │         │ Applications│    │
 │   │            │         │             │    │
 │   └──────┬─────┘         └──────┬──────┘    │
@@ -29,7 +29,7 @@ Twitter Service is a web automation service based on BrowserBase, providing stru
 │                  Adapter Layer              │
 │                                             │
 │   ┌────────────┐         ┌─────────────┐    │
-│   │AIRI Adapter│         │ MCP Adapter │    │
+│   │NAVI Adapter│         │ MCP Adapter │    │
 │   │(@server-sdk)│        │ (HTTP/JSON) │    │
 │   └──────┬─────┘         └──────┬──────┘    │
 └──────────┼─────────────────────┼────────────┘
@@ -68,7 +68,7 @@ Twitter Service is a web automation service based on BrowserBase, providing stru
 - **Browser Automation**: BrowserBase Stagehand, Playwright
 - **HTML Parsing**: unified, rehype-parse, unist-util-visit
 - **API Server**: H3.js, listhen
-- **Adapters**: AIRI Server SDK, MCP SDK
+- **Adapters**: NAVI Server SDK, MCP SDK
 - **Logging System**: @guiiai/logg
 - **Configuration**: defu (deep merging configurations)
 - **Utility Library**: zod (type validation)
@@ -77,9 +77,9 @@ Twitter Service is a web automation service based on BrowserBase, providing stru
 
 ### 5.1 Adapter Layer
 
-#### 5.1.1 AIRI Adapter
+#### 5.1.1 NAVI Adapter
 
-Provides integration with the AIRI LLM platform, handling event-driven communication.
+Provides integration with the NAVI LLM platform, handling event-driven communication.
 
 #### 5.1.2 MCP Adapter
 

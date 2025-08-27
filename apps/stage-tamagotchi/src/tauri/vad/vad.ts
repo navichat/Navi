@@ -1,4 +1,4 @@
-import type { BaseVAD, BaseVADConfig, VADEventCallback, VADEvents } from '@proj-airi/stage-ui/libs/audio/vad'
+import type { BaseVAD, BaseVADConfig, VADEventCallback, VADEvents } from '@proj-navi/stage-ui/libs/audio/vad'
 
 import { invoke } from '../invoke'
 

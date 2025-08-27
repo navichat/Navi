@@ -2,7 +2,7 @@ import process, { exit } from 'node:process'
 
 import MineflayerArmorManager from 'mineflayer-armor-manager'
 
-import { Client } from '@proj-airi/server-sdk'
+import { Client } from '@proj-navi/server-sdk'
 import { loader as MineflayerAutoEat } from 'mineflayer-auto-eat'
 import { plugin as MineflayerCollectBlock } from 'mineflayer-collectblock'
 import { pathfinder as MineflayerPathfinder } from 'mineflayer-pathfinder'
@@ -32,15 +32,15 @@ async function main() {
     ],
   })
 
-  // Connect airi server
-  const airiClient = new Client({
-    name: config.airi.clientName,
-    url: config.airi.wsBaseUrl,
+  // Connect navi server
+  const naviClient = new Client({
+    name: config.navi.clientName,
+    url: config.navi.wsBaseUrl,
   })
 
   // Dynamically load LLMAgent after the bot is initialized
   const agent = await createNeuriAgent(bot)
-  await bot.loadPlugin(LLMAgent({ agent, airiClient }))
+  await bot.loadPlugin(LLMAgent({ agent, naviClient }))
 
   process.on('SIGINT', () => {
     bot.stop()

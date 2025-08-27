@@ -2,7 +2,7 @@
 import type { PreTrainedModel, Processor } from '@huggingface/transformers'
 
 import { AutoModel, AutoProcessor, env, RawImage } from '@huggingface/transformers'
-import { InputFile } from '@proj-airi/ui'
+import { InputFile } from '@proj-navi/ui'
 import { check } from 'gpuu/webgpu'
 import { computed, onMounted, ref } from 'vue'
 

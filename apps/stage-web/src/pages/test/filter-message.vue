@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { sleep } from '@moeru/std'
-import { Textarea } from '@proj-airi/ui'
+import { Textarea } from '@proj-navi/ui'
 import { ref } from 'vue'
 
 const messageInput = ref<string>('')

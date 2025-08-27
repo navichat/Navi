@@ -1,18 +1,18 @@
 {
-  "name": "@proj-airi/memory-pgvector",
+  "name": "@proj-navi/memory-pgvector",
   "type": "module",
   "version": "0.7.2-beta.2",
   "private": true,
   "description": "",
   "author": {
-    "name": "Moeru AI Project AIRI Team",
-    "email": "airi@moeru.ai",
+    "name": "Moeru AI Project NAVI Team",
+    "email": "navi@navichat.ai",
     "url": "https://github.com/moeru-ai"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/moeru-ai/airi.git",
+    "url": "https://github.com/navichat/navi.git",
     "directory": "packages/memory-pgvector"
   },
   "keywords": [],
@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@guiiai/logg": "^1.0.10",
-    "@proj-airi/server-sdk": "workspace:^",
+    "@proj-navi/server-sdk": "workspace:^",
     "drizzle-orm": "^0.44.4",
     "postgres": "^3.4.7"
   },

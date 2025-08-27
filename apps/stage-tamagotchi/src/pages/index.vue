@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import type { AiriTamagotchiEvents, Point } from '../composables/tauri'
 
-import { WidgetStage } from '@proj-airi/stage-ui/components/scenes'
-import { useLive2d } from '@proj-airi/stage-ui/stores/live2d'
-import { useMcpStore } from '@proj-airi/stage-ui/stores/mcp'
-import { connectServer } from '@proj-airi/tauri-plugin-mcp'
+import { WidgetStage } from '@proj-navi/stage-ui/components/scenes'
+import { useLive2d } from '@proj-navi/stage-ui/stores/live2d'
+import { useMcpStore } from '@proj-navi/stage-ui/stores/mcp'
+import { connectServer } from '@proj-navi/tauri-plugin-mcp'
 import { watchThrottled } from '@vueuse/core'
 import { storeToRefs } from 'pinia'
 import { computed, onMounted, onUnmounted, ref, watch } from 'vue'

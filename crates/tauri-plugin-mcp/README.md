@@ -14,7 +14,7 @@ This plugin requires a Rust version of at least 1.77.2
 [dependencies]
 tauri-plugin-mcp = { version = "0.4.27" }
 # or
-tauri-plugin-mcp = { git = "https://github.com/moeru-ai/airi", tag = "0.4.27" }
+tauri-plugin-mcp = { git = "https://github.com/navichat/navi", tag = "0.4.27" }
 ```
 
 You can install the JavaScript Guest bindings using your preferred JavaScript package manager:

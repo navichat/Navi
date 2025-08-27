@@ -1,4 +1,4 @@
-# Start contributing to [Project AIRI](https://github.com/moeru-ai/airi)
+# Start contributing to [Project AIRI](https://github.com/navichat/navi)
 
 Hello! Thank you for your interest in contributing to this project. This guide will help you get started.
 
@@ -116,7 +116,7 @@ git rebase main
 
 ## Fork this project
 
-Click on the **Fork** button on the top right corner of the [moeru-ai/airi](https://github.com/moeru-ai/airi) page.
+Click on the **Fork** button on the top right corner of the [moeru-ai/airi](https://github.com/navichat/navi) page.
 
 ## Clone
 
@@ -174,7 +174,7 @@ pnpm dev:tamagotchi
 > nr dev:tamagotchi
 > ```
 
-### Stage Web (Browser version for [airi.moeru.ai](https://airi.moeru.ai))
+### Stage Web (Browser version for [navi.navichat.ai](https://navi.navichat.ai))
 
 ```shell
 pnpm dev
@@ -342,12 +342,12 @@ You should be able to browse the branch on your fork repository.
 > If this is your first time contributing to this project, you need to add the upstream repository too:
 >
 > ```shell
-> git remote add upstream https://github.com/moeru-ai/airi.git
+> git remote add upstream https://github.com/navichat/navi.git
 > ```
 
 ## Creating Pull Request
 
-Navigate to [moeru-ai/airi](https://github.com/moeru-ai/airi) page, click on the **Pull requests** tab, and click on the **New pull request** button, click on the **Compare across forks** link, and select your fork repository.
+Navigate to [moeru-ai/airi](https://github.com/navichat/navi) page, click on the **Pull requests** tab, and click on the **New pull request** button, click on the **Compare across forks** link, and select your fork repository.
 
 Review the changes, and click on the **Create pull request** button.
 

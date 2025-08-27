@@ -135,14 +135,14 @@ rustPlatform.buildRustPackage (final: {
   meta = {
     description = "Self-hostable AI waifu / companion / VTuber";
     longDescription = ''
-      AIRI is a soul container of AI waifu / virtual characters to bring them into our world,
+      NAVI is a soul container of AI waifu / virtual characters to bring them into our world,
       wishing to achieve Neuro-sama's altitude. It's completely LLM and AI driven, capable of
       realtime voice chat, playing Minecraft and Factorio. It can be run in browser or on desktop.
       This is the desktop version.
     '';
-    homepage = "https://github.com/moeru-ai/airi";
-    changelog = "https://github.com/moeru-ai/airi/releases/tag/v${final.version}";
-    # While airi itself is licensed under MIT, it uses the nonfree Cubism SDK. Whether it's
+    homepage = "https://github.com/navichat/navi";
+    changelog = "https://github.com/navichat/navi/releases/tag/v${final.version}";
+    # While navi itself is licensed under MIT, it uses the nonfree Cubism SDK. Whether it's
     # redistributable remains a question, so we say it's not.
     license = lib.licenses.unfree;
     platforms = [
@@ -151,7 +151,7 @@ rustPlatform.buildRustPackage (final: {
       "x86_64-darwin"
       "aarch64-darwin"
     ];
-    mainProgram = "airi";
+    mainProgram = "navi";
     maintainers = with lib.maintainers; [ weathercold ];
   };
 })

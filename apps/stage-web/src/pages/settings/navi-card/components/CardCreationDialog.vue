@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import type { Card } from '@proj-airi/ccc'
+import type { Card } from '@proj-navi/ccc'
 
 import kebabcase from '@stdlib/string-base-kebabcase'
 
-import { Button } from '@proj-airi/stage-ui/components'
-import { useAiriCardStore } from '@proj-airi/stage-ui/stores/modules/airi-card'
-import { FieldInput, FieldValues } from '@proj-airi/ui'
+import { Button } from '@proj-navi/stage-ui/components'
+import { useNaviCardStore } from '@proj-navi/stage-ui/stores/modules/navi-card'
+import { FieldInput, FieldValues } from '@proj-navi/ui'
 import {
   DialogContent,
   DialogOverlay,
@@ -28,7 +28,7 @@ const emit = defineEmits<{
 const modelValue = defineModel<boolean>()
 
 const { t } = useI18n()
-const cardStore = useAiriCardStore()
+const cardStore = useNaviCardStore()
 
 // Tab type definition
 interface Tab {

@@ -1,8 +1,8 @@
 {
-  "name": "@proj-airi/font-cjkfonts-allseto",
+  "name": "@proj-navi/font-cjkfonts-allseto",
   "type": "module",
   "version": "0.7.2-beta.2",
-  "description": "Essential CSS for font, cjkfonts 全瀨體, used by Project AIRI",
+  "description": "Essential CSS for font, cjkfonts 全瀨體, used by Project NAVI",
   "author": {
     "name": "Creators of cjkFonts",
     "url": "https://cjkfonts.io/"
@@ -11,7 +11,7 @@
   "homepage": "https://cjkfonts.io/blog/cjkfonts_allseto",
   "repository": {
     "type": "git",
-    "url": "https://github.com/moeru-ai/airi.git",
+    "url": "https://github.com/navichat/navi.git",
     "directory": "packages/font-cjkfonts-allseto"
   },
   "exports": {

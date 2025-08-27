@@ -31,7 +31,7 @@ Let's rewind the time a little bit!
 
 <img :src="Gelbana" alt="Gelbana" />
 
-> Ahh, don't worry, our beloved [AIRI](https://github.com/moeru-ai/airi) will
+> Ahh, don't worry, our beloved [AIRI](https://github.com/navichat/navi) will
 > not turn into GEL-NANA like this. BUT, if you haven't watched the
 > [_Steins;Gate_](https://myanimelist.net/anime/9253/Steins_Gate) anime series,
 > try it~!
@@ -78,7 +78,7 @@ recorded once done:
 
 The entire OKLCH color palette can spread on to the canvas all at once
 for us to take as reference. But it wasn't perfect to tryout the colors
-and have the same scheme of feelings of Project AIRI's theme, was it?
+and have the same scheme of feelings of Project NAVI's theme, was it?
 
 So I first re-implemented the color slider, which feels much more suitable:
 
@@ -96,14 +96,14 @@ of AIRI, that's why I designed another dedicated logo for the UI page:
 Oh, right, the entire UI component has been deployed to Netlify as usual
 under the path `/ui/`, feel free to take a look at it if you ever wondered
 how does the UI elements look like:
-[https://airi.moeru.ai/ui/](https://airi.moeru.ai/ui/)
+[https://navi.navichat.ai/ui/](https://navi.navichat.ai/ui/)
 
 There are tons of other features that we cannot cover in this DevLog entirely:
 
 - [x] Supported for all of the LLM providers.
 - [x] Improved the animation and transition of menu navigation UI.
 - [x] Improved the spacing of the fields, new form!
-- [x] Component for (almost all the todo components on the [Roadmap](https://github.com/moeru-ai/airi/issues/42))
+- [x] Component for (almost all the todo components on the [Roadmap](https://github.com/navichat/navi/issues/42))
   - [x] Form
     - [x] Radio
     - [x] Radio Group
@@ -168,7 +168,7 @@ what Neuro-sama can do with the new **Speech** ability!
 With all of those, we can get this result:
 
 <video control muted autoplay>
-  <source src="./assets/airi-demo.mp4" />
+  <source src="./assets/navi-demo.mp4" />
 </video>
 
 Nearly the same. But our story doesn't end here, currently, we haven't

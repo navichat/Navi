@@ -44,7 +44,7 @@ export function LLMAgent(options: LLMAgentOptions): MineflayerPlugin {
       const onChat = new ChatMessageHandler(bot.username).handleChat((username, message) =>
         handleChatMessage(username, message, botWithAgents, options.agent, logger))
 
-      options.airiClient.onEvent('input:text:voice', event =>
+      options.naviClient.onEvent('input:text:voice', event =>
         handleVoiceInput(event, botWithAgents, options.agent, logger))
 
       bot.bot.on('chat', onChat)

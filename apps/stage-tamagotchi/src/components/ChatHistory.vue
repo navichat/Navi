@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import type { CommonContentPart } from '@xsai/shared-chat'
 
-import { MarkdownRenderer } from '@proj-airi/stage-ui/components'
-import { useChatStore } from '@proj-airi/stage-ui/stores/chat'
+import { MarkdownRenderer } from '@proj-navi/stage-ui/components'
+import { useChatStore } from '@proj-navi/stage-ui/stores/chat'
 import { storeToRefs } from 'pinia'
 import { nextTick, ref } from 'vue'
 import { useI18n } from 'vue-i18n'

@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import type { ChatProvider } from '@xsai-ext/shared-providers'
 
-import { useMicVAD } from '@proj-airi/stage-ui/composables'
-import { useChatStore } from '@proj-airi/stage-ui/stores/chat'
-import { useConsciousnessStore } from '@proj-airi/stage-ui/stores/modules/consciousness'
-import { useProvidersStore } from '@proj-airi/stage-ui/stores/providers'
-import { useSettingsAudioDevice } from '@proj-airi/stage-ui/stores/settings'
-import { BasicTextarea } from '@proj-airi/ui'
+import { useMicVAD } from '@proj-navi/stage-ui/composables'
+import { useChatStore } from '@proj-navi/stage-ui/stores/chat'
+import { useConsciousnessStore } from '@proj-navi/stage-ui/stores/modules/consciousness'
+import { useProvidersStore } from '@proj-navi/stage-ui/stores/providers'
+import { useSettingsAudioDevice } from '@proj-navi/stage-ui/stores/settings'
+import { BasicTextarea } from '@proj-navi/ui'
 import { storeToRefs } from 'pinia'
 import { onMounted, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'

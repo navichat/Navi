@@ -1,17 +1,17 @@
 {
-  "name": "@proj-airi/component-calling",
+  "name": "@proj-navi/component-calling",
   "type": "module",
   "private": true,
   "description": "Realtime audio",
   "author": {
-    "name": "Moeru AI Project AIRI Team",
-    "email": "airi@moeru.ai",
+    "name": "Moeru AI Project NAVI Team",
+    "email": "navi@navichat.ai",
     "url": "https://github.com/moeru-ai"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/moeru-ai/airi.git",
+    "url": "https://github.com/navichat/navi.git",
     "directory": "apps/component-calling"
   },
   "scripts": {
@@ -21,7 +21,7 @@
     "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
-    "@proj-airi/ui": "workspace:^",
+    "@proj-navi/ui": "workspace:^",
     "@valibot/to-json-schema": "1.0.0-rc.0",
     "@vueuse/core": "^13.6.0",
     "@xsai/generate-text": "catalog:",

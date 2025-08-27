@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { Button } from '@proj-airi/stage-ui/components'
-import { useSettings } from '@proj-airi/stage-ui/stores/settings'
+import { Button } from '@proj-navi/stage-ui/components'
+import { useSettings } from '@proj-navi/stage-ui/stores/settings'
 import { storeToRefs } from 'pinia'
 
 const emits = defineEmits<{

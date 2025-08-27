@@ -1,14 +1,14 @@
 # 编年史 v0.1.0
 
-- [x] [前端集成 VRM（12 月 5 日）](https://github.com/nekomeowww/airi-vtuber/commit/5738c219b5891f200d7dc9dae04a8e885c8d8c17)
-  - [x] [VRM 闲置动画（12 月 6 日）](https://github.com/nekomeowww/airi-vtuber/commit/8f9a0e76cde546952651189229c824c6196caed6)
-  - [x] [VRM 眨眼睛（12 月 7 日）](https://github.com/nekomeowww/airi-vtuber/commit/289f8226696998dae36b550d3a055eba04e160f6)
+- [x] [前端集成 VRM（12 月 5 日）](https://github.com/nekomeowww/navi-vtuber/commit/5738c219b5891f200d7dc9dae04a8e885c8d8c17)
+  - [x] [VRM 闲置动画（12 月 6 日）](https://github.com/nekomeowww/navi-vtuber/commit/8f9a0e76cde546952651189229c824c6196caed6)
+  - [x] [VRM 眨眼睛（12 月 7 日）](https://github.com/nekomeowww/navi-vtuber/commit/289f8226696998dae36b550d3a055eba04e160f6)
 
 - [x] 嘴巴（6 月 8 日）
   - [x] [创建 unspeech 项目（12 月 13 日）](https://github.com/moeru-ai/unspeech)
     - [x] 接入 TTS（6 月 8 日）
     - [x] 接了 11Labs
-      - [x] [封装独立的 11Labs 类型包（12 月 3 日）](https://github.com/nekomeowww/airi-vtuber/commit/f9ddf9af93a61e0a2f3323ced79171f29b6dd2e6)
+      - [x] [封装独立的 11Labs 类型包（12 月 3 日）](https://github.com/nekomeowww/navi-vtuber/commit/f9ddf9af93a61e0a2f3323ced79171f29b6dd2e6)
 
 - [x] 听觉（12 月 12 日）
   - [x] 实现说话按钮（6 月 9 日）
@@ -41,23 +41,23 @@
     - 教学
       - [Realtime video transcription and translation with Whisper and NLLB on MacBook Air | by Wei Lu | Medium](https://medium.com/@GenerationAI/realtime-video-transcription-and-translation-with-whisper-and-nllb-on-macbook-air-31db4c62c074)
       - [🤗 Transformers.js + ONNX Runtime WebGPU in Chrome extension | by Wei Lu | Medium](https://medium.com/@GenerationAI/transformers-js-onnx-runtime-webgpu-in-chrome-extension-13b563933ca9)
-  - [ ] [Whisper WebGPU Demo（12 月 10 日）](https://github.com/moeru-ai/airi/commit/ae3b9468d74c5d38c507ae2877799fd36339f8c1)
-  - [ ] [MicVAD Demo（12 月 11 日）](https://github.com/moeru-ai/airi/commit/e4a0cc71006639669e9d71f0db27086fca47a03a)
-  - [ ] [MicVAD + ONNX Whisper 实时转写（12 月 12 日）](https://github.com/moeru-ai/airi/commit/01dbaeb9317ab7491743e50dd6c58fc7e19a880d)
+  - [ ] [Whisper WebGPU Demo（12 月 10 日）](https://github.com/navichat/navi/commit/ae3b9468d74c5d38c507ae2877799fd36339f8c1)
+  - [ ] [MicVAD Demo（12 月 11 日）](https://github.com/navichat/navi/commit/e4a0cc71006639669e9d71f0db27086fca47a03a)
+  - [ ] [MicVAD + ONNX Whisper 实时转写（12 月 12 日）](https://github.com/navichat/navi/commit/01dbaeb9317ab7491743e50dd6c58fc7e19a880d)
   - [ ] [dcrebbin/oai-voice-mode-chat-mac: Adds realtime chat for ChatGPT Voice Mode [Unofficial]](https://github.com/dcrebbin/oai-voice-mode-chat-mac)
 - [x] 表情（7 月 9 日）
-  - [x] [前端侧 VRM 表情控制（12 月 7 日）](https://github.com/nekomeowww/airi-vtuber/commit/b69abd2b5ab70aa1d72b5e7224f146c8426394eb)
+  - [x] [前端侧 VRM 表情控制（12 月 7 日）](https://github.com/nekomeowww/navi-vtuber/commit/b69abd2b5ab70aa1d72b5e7224f146c8426394eb)
 
 - [ ] 多语言
   - [x] 界面多语言支持
-    - [x] [feat: basic i18n (#2)（12 月 13 日）](https://github.com/moeru-ai/airi/commit/38cda9e957aa4d66bed115ebf96d3d81ce085f68)
+    - [x] [feat: basic i18n (#2)（12 月 13 日）](https://github.com/navichat/navi/commit/38cda9e957aa4d66bed115ebf96d3d81ce085f68)
 
 - [ ] 界面优化
-  - [x] [Canvas 场景移动端自适应（12 月 5 日）](https://github.com/nekomeowww/airi-vtuber/commit/bc04dbaf2ba98f13a367a8dd153cef4a19d1b83d)
-    - [x] [Live2D Viewer 改进（12 月 5 日）](https://github.com/nekomeowww/airi-vtuber/commit/f6e41e64afdb2592024a24ec2d1de732c4c3d537)
-    - [x] [Live2D 模型放大和自适应比例（12 月 5 日）](https://github.com/nekomeowww/airi-vtuber/commit/1ce61d7e13fd9dc55a447e513a10e4a08730716c)
-  - [x] [屏幕安全区（12 月 4 日）](https://github.com/nekomeowww/airi-vtuber/commit/135a8a00fc4d0013d2caec585e8c911817870abc)
-  - [x] [设置菜单 & 优化溢出（12 月 7 日）](https://github.com/nekomeowww/airi-vtuber/commit/e2f1f7bd37757b862d803f3cd77475b436fe8758)
+  - [x] [Canvas 场景移动端自适应（12 月 5 日）](https://github.com/nekomeowww/navi-vtuber/commit/bc04dbaf2ba98f13a367a8dd153cef4a19d1b83d)
+    - [x] [Live2D Viewer 改进（12 月 5 日）](https://github.com/nekomeowww/navi-vtuber/commit/f6e41e64afdb2592024a24ec2d1de732c4c3d537)
+    - [x] [Live2D 模型放大和自适应比例（12 月 5 日）](https://github.com/nekomeowww/navi-vtuber/commit/1ce61d7e13fd9dc55a447e513a10e4a08730716c)
+  - [x] [屏幕安全区（12 月 4 日）](https://github.com/nekomeowww/navi-vtuber/commit/135a8a00fc4d0013d2caec585e8c911817870abc)
+  - [x] [设置菜单 & 优化溢出（12 月 7 日）](https://github.com/nekomeowww/navi-vtuber/commit/e2f1f7bd37757b862d803f3cd77475b436fe8758)
 
 ## Models
 

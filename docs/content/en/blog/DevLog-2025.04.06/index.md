@@ -55,12 +55,12 @@ Such beautiful, and empowers me to continue to improve her.
 ### Memory system 记忆系统
 
 I was working on the refactoring over
-[`telegram-bot`](https://github.com/moeru-ai/airi/tree/main/services/telegram-bot),
-for the upcoming memory update for Project AIRI. Which we were planning to implement
+[`telegram-bot`](https://github.com/navichat/navi/tree/main/services/telegram-bot),
+for the upcoming memory update for Project NAVI. Which we were planning to implement
 for months.
 
-最近正在重构 [`telegram-bot`](https://github.com/moeru-ai/airi/tree/main/services/telegram-bot) 以为已经准备了数月的
-Project AIRI 即将到来的「记忆更新」作准备。
+最近正在重构 [`telegram-bot`](https://github.com/navichat/navi/tree/main/services/telegram-bot) 以为已经准备了数月的
+Project NAVI 即将到来的「记忆更新」作准备。
 
 We are planning to make the memory system the most advanced, robust, and reliable
 that many thoughts were borrowed from how memory works in Human brain.
@@ -576,7 +576,7 @@ It is fully interactive too!!! Can be played on [drizzle-orm-duckdb-wasm.netlify
 - ReLU character design finished!
 - ReLU sticker Vol.1 finished!
 - ReLU sticker Vol.2 animated finished!
-- 89 tasks finished for [Roadmap v0.4](https://github.com/moeru-ai/airi/issues/42)
+- 89 tasks finished for [Roadmap v0.4](https://github.com/navichat/navi/issues/42)
 
 - 300 🌟 达成
 - 3 位新的 Issue 贡献者
@@ -584,7 +584,7 @@ It is fully interactive too!!! Can be played on [drizzle-orm-duckdb-wasm.netlify
 - ReLU 形象设计完成
 - ReLU 表情包 Vol.1 制作完成！
 - ReLU 表情包 Vol.2 动态版 制作完成
-- [路线图 v0.4](https://github.com/moeru-ai/airi/issues/42) 中有总计 89 个任务被完成了
+- [路线图 v0.4](https://github.com/navichat/navi/issues/42) 中有总计 89 个任务被完成了
 
 ## Other updates 其他更新
 
@@ -599,8 +599,8 @@ Big shout out to [@LemonNekoGH](https://github.com/LemonNekoGH)
 
 真的很感谢 [@LemonNekoGH](https://github.com/LemonNekoGH)！
 
-A while ago, everyone on the team mentioned that the `moeru-ai/airi` repository was getting too big and that development was getting laggy.
-Indeed, the `moeru-ai/airi` repository has seen the birth of countless sub-projects in the past 5 months,
+A while ago, everyone on the team mentioned that the `navichat/navi` repository was getting too big and that development was getting laggy.
+Indeed, the `navichat/navi` repository has seen the birth of countless sub-projects in the past 5 months,
 covered from agent implementations,
 to game agent binding implementations,
 to simple and easy to use npm package wrappers,
@@ -609,8 +609,8 @@ to Drizzle driver support for DuckDB WASM,
 to API implementation and integration of back-end services.
 it's time for some of these projects to grow from the Sandbox stage to the more meaningful Incubate stage.
 
-团队的大家前段时间都在提到说 `moeru-ai/airi` 这个项目仓库越来越大了，开发的时候会很卡顿。确实，过去的 5 个月里
-`moeru-ai/airi` 仓库里诞生了数不尽的子项目，覆盖了从 agent 实现，游戏 agent 绑定实现，到简单好用的 npm 包封装，以及具有开创性意义的 transformers.js 封装，
+团队的大家前段时间都在提到说 `navichat/navi` 这个项目仓库越来越大了，开发的时候会很卡顿。确实，过去的 5 个月里
+`navichat/navi` 仓库里诞生了数不尽的子项目，覆盖了从 agent 实现，游戏 agent 绑定实现，到简单好用的 npm 包封装，以及具有开创性意义的 transformers.js 封装，
 和 DuckDB WASM 的 Drizzle 驱动支持，到 API 后端服务的实现和集成的各种领域，是时候让一些项目从 sandbox 阶段成长到更具意义的「Incubate 孵化」阶段了。
 
 So we decided to split a number of sub-projects that were already mature and in widespread
@@ -621,28 +621,28 @@ use into separate repositories to be maintained:
 - `hfup`
 
   The [`hfup`](https://github.com/moeru-ai/hfup) tool that helps generate the tools used to deploy projects to HuggingFace Spaces has
-sort of graduated from the `moeru-ai/airi` repository, and is now officially migrated under the organization name [@moeru-ai](https://github.com/moeru-ai)
+sort of graduated from the `navichat/navi` repository, and is now officially migrated under the organization name [@moeru-ai](https://github.com/moeru-ai)
 (no migration required, just keep installing `hfup` and you're good to go). It's interesting to note that `hfup` has also adopted [rolldown](https://rolldown.rs/)
 and [oxlint](https://oxc.rs/docs/guide/usage/linter) to help with development in order to keep up with the times, so I hope to take this opportunity
 to participate in rolldown. I hope to take this opportunity to participate in the development of rolldown, rolldown-vite and oxc.
 Thanks to [@sxzz](https://github.com/sxzz) for the integration process.
 
-  用于帮助生成用于部署项目到 HuggingFace Spaces 的 [`hfup`](https://github.com/moeru-ai/hfup) 工具已经算是从 `moeru-ai/airi` 大仓库中阶段性毕业了，
+  用于帮助生成用于部署项目到 HuggingFace Spaces 的 [`hfup`](https://github.com/moeru-ai/hfup) 工具已经算是从 `navichat/navi` 大仓库中阶段性毕业了，
 现在正式迁移到 [@moeru-ai](https://github.com/moeru-ai) 的组织名下（不需要任何迁移操作，继续安装 `hfup` 就可以用了）。非常有意义的是，`hfup` 为了跟上时代，
 也采用了 [rolldown](https://rolldown.rs/) 和 [oxlint](https://oxc.rs/docs/guide/usage/linter) 帮助开发，希望能借此机会参与到 rolldown，
 rolldown-vite 和 oxc 的开发当中。非常感谢 [@sxzz](https://github.com/sxzz) 在迁移过程中给到的援助。
 
-- `@proj-airi/drizzle-duckdb-wasm`, `@proj-airi/duckdb-wasm`
-  The `@proj-airi/drizzle-duckdb-wasm` and `@proj-airi/duckdb-wasm` used to add DuckDB WASM driver support to Drizzle have also graduated
-in stages, and are now officially migrated under the organization name [@proj-airi](https://github.com/proj-airi)
+- `@proj-navi/drizzle-duckdb-wasm`, `@proj-navi/duckdb-wasm`
+  The `@proj-navi/drizzle-duckdb-wasm` and `@proj-navi/duckdb-wasm` used to add DuckDB WASM driver support to Drizzle have also graduated
+in stages, and are now officially migrated under the organization name [@proj-navi](https://github.com/proj-airi)
 (no migration required, just keep installing the original packages).
 
-  用于为 Drizzle 添加 DuckDB WASM 驱动支持的 `@proj-airi/drizzle-duckdb-wasm` 和 `@proj-airi/duckdb-wasm` 也算是阶段性毕业了，
-现在正式迁移到 [@proj-airi](https://github.com/proj-airi) 的组织名下（不需要任何迁移操作，继续安装原来的包就可以用了）。
+  用于为 Drizzle 添加 DuckDB WASM 驱动支持的 `@proj-navi/drizzle-duckdb-wasm` 和 `@proj-navi/duckdb-wasm` 也算是阶段性毕业了，
+现在正式迁移到 [@proj-navi](https://github.com/proj-airi) 的组织名下（不需要任何迁移操作，继续安装原来的包就可以用了）。
 
-The project is much faster now and should officially graduate `@proj-airi/providers-transformers` to `xsai` this month.
+The project is much faster now and should officially graduate `@proj-navi/providers-transformers` to `xsai` this month.
 
-现在项目速度快了很多，这个月应该会把 `@proj-airi/providers-transformers` 正式毕业到 `xsai` 名下。
+现在项目速度快了很多，这个月应该会把 `@proj-navi/providers-transformers` 正式毕业到 `xsai` 名下。
 
 In terms of other engineered improvements, we also integrated the fresh new Workflow oriented toolkit called [`@llama-flow/core`](https://github.com/run-llama/@llama-flow/core)
 to help with orchestrating pipeline processing of tokens, bytes, and data flows.
@@ -671,9 +671,9 @@ We finally supported Character cards natively!
   </div>
 </div>
 
-A editor with models, voice lines, and every modules that Project AIRI has supported is included 🎉.
+A editor with models, voice lines, and every modules that Project NAVI has supported is included 🎉.
 
-当然，一个包含模型、声线和 Project AIRI 支持的所有模块 🎉 的配置的能力的编辑器也包含在内了。
+当然，一个包含模型、声线和 Project NAVI 支持的所有模块 🎉 的配置的能力的编辑器也包含在内了。
 
 Big shout out to [@luoling8192](https://github.com/luoling8192)
 
@@ -748,29 +748,29 @@ bug fixes, and improvements we haven't covered yet:
 - Featherless.ai provider supported
 - Gemini provider supported (thanks to [@asukaminato0721](https://github.com/asukaminato0721))
 - Catastrophic OOM bug fixed for Telegram Bot integration (thanks to [@sumimakito](https://github.com/sumimakito), [@kwaa](https://github.com/kwaa), and [@QiroNT](https://github.com/QiroNT))
-- New 98.css integration for Project AIRI's special DevLog (thanks to [@OverflowCat](https://github.com/OverflowCat))
+- New 98.css integration for Project NAVI's special DevLog (thanks to [@OverflowCat](https://github.com/OverflowCat))
 
-> This is a special version of Project AIRI's DevLog that heavily inspired by [@OverflowCat](https://github.com/OverflowCat)'s
+> This is a special version of Project NAVI's DevLog that heavily inspired by [@OverflowCat](https://github.com/OverflowCat)'s
 > blog post [ModTran](https://blog.xinshijiededa.men/modtran/) and the style of code was copied from [@OverflowCat](https://github.com/OverflowCat)'s implementation
 > over https://github.com/OverflowCat/blog/blob/0a92f916629ad942b7da84b894759fde1616bf37/src/components/98/98.ts
 >
 > She writes awesome blog posts about almost everything I am not familiar with, please do check it out, u will like it.
 >
-> 这是 Project AIRI 一篇特别版的开发日志，其灵感主要来自 [@OverflowCat](https://github.com/OverflowCat) 的博文 [ModTran](https://blog.xinshijiededa.men/modtran/)，
+> 这是 Project NAVI 一篇特别版的开发日志，其灵感主要来自 [@OverflowCat](https://github.com/OverflowCat) 的博文 [ModTran](https://blog.xinshijiededa.men/modtran/)，
 > 代码风格大量借鉴了 [@OverflowCat](https://github.com/OverflowCat) 在 https://github.com/OverflowCat/blog/blob/0a92f916629ad942b7da84b894759fde1616bf37/src/components/98/98.ts 里的实现。
 >
 > 她写的博文很棒，几乎涉及所有我不熟悉的内容，请一定去看看，你会喜欢的。
 
 ## See you
 
-I think that's all for this time's DevLog, this closes our [Roadmap v0.4](https://github.com/moeru-ai/airi/issues/42) too,
+I think that's all for this time's DevLog, this closes our [Roadmap v0.4](https://github.com/navichat/navi/issues/42) too,
 we hope you like the fresh new looking of the UI and updated tamagotchi version.
 I tried to use both English and Chinese to write this for both of the language audiences, please do leave a comment in our
-[repository's discussion's](https://github.com/moeru-ai/airi/discussions) page to tell us whether you like this or not.
+[repository's discussion's](https://github.com/navichat/navi/discussions) page to tell us whether you like this or not.
 
-我想这就是本次 DevLog 的全部内容了，我们的 [Roadmap v0.4](https://github.com/moeru-ai/airi/issues/42) 也到此结束，
+我想这就是本次 DevLog 的全部内容了，我们的 [Roadmap v0.4](https://github.com/navichat/navi/issues/42) 也到此结束，
 希望大家喜欢焕然一新的用户界面和更新后的桌宠版本。
-我在写这篇文章时尝试使用了中英文两种语言，请在我们仓库的[讨论页面](https://github.com/moeru-ai/airi/discussions)留言，告诉我们您是否喜欢这篇文章。
+我在写这篇文章时尝试使用了中英文两种语言，请在我们仓库的[讨论页面](https://github.com/navichat/navi/discussions)留言，告诉我们您是否喜欢这篇文章。
 
 Let's use the quote from ReLU for the ending:
 

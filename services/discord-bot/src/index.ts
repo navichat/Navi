@@ -1,7 +1,7 @@
 import { env } from 'node:process'
 
 import { Format, LogLevel, setGlobalFormat, setGlobalLogLevel, useLogg } from '@guiiai/logg'
-import { Client as AiriClient } from '@proj-airi/server-sdk'
+import { Client as NaviClient } from '@proj-navi/server-sdk'
 import { Client, Events, GatewayIntentBits } from 'discord.js'
 
 import { handlePing, registerCommands, VoiceManager } from './bots/discord/commands'
@@ -15,8 +15,8 @@ async function main() {
   // await WhisperLargeV3Pipeline.getInstance()
 
   const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildVoiceStates] })
-  const airiClient = new AiriClient({ name: 'discord-bot', possibleEvents: ['input:text', 'input:text:voice', 'input:voice'], token: 'abcd' })
-  const voiceManager = new VoiceManager(client, airiClient)
+  const naviClient = new NaviClient({ name: 'discord-bot', possibleEvents: ['input:text', 'input:text:voice', 'input:voice'], token: 'abcd' })
+  const voiceManager = new VoiceManager(client, naviClient)
 
   // When the client is ready, run this code (only once).
   // The distinction between `client: Client<boolean>` and `readyClient: Client<true>` is important for TypeScript developers.

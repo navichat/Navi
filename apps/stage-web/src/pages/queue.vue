@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { sleep } from '@moeru/std'
-import { useQueue } from '@proj-airi/stage-ui/composables/queue'
+import { useQueue } from '@proj-navi/stage-ui/composables/queue'
 import { onMounted, ref } from 'vue'
 
 const temp = ref<string>('')

@@ -1,17 +1,17 @@
 {
-  "name": "@proj-airi/telegram-bot",
+  "name": "@proj-navi/telegram-bot",
   "type": "module",
   "private": true,
-  "description": "Telegram bot for AIRI",
+  "description": "Telegram bot for NAVI",
   "author": {
-    "name": "Moeru AI Project AIRI Team",
-    "email": "airi@moeru.ai",
+    "name": "Navi Team",
+    "email": "navi@navichat.ai",
     "url": "https://github.com/moeru-ai"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/moeru-ai/airi.git",
+    "url": "https://github.com/navichat/navi.git",
     "directory": "services/telegram-bot"
   },
   "scripts": {

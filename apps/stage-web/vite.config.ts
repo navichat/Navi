@@ -11,8 +11,8 @@ import Yaml from 'unplugin-yaml/vite'
 import VueDevTools from 'vite-plugin-vue-devtools'
 import Layouts from 'vite-plugin-vue-layouts'
 
-import { Download } from '@proj-airi/unplugin-fetch/vite'
-import { DownloadLive2DSDK } from '@proj-airi/unplugin-live2d-sdk/vite'
+import { Download } from '@proj-navi/unplugin-fetch/vite'
+import { DownloadLive2DSDK } from '@proj-navi/unplugin-live2d-sdk/vite'
 import { templateCompilerOptions } from '@tresjs/core'
 import { LFS, SpaceCard } from 'hfup/vite'
 import { defineConfig } from 'vite'
@@ -22,9 +22,9 @@ export default defineConfig({
   optimizeDeps: {
     exclude: [
       // Internal Packages
-      '@proj-airi/stage-ui/*',
-      '@proj-airi/drizzle-duckdb-wasm',
-      '@proj-airi/drizzle-duckdb-wasm/*',
+      '@proj-navi/stage-ui/*',
+      '@proj-navi/drizzle-duckdb-wasm',
+      '@proj-navi/drizzle-duckdb-wasm/*',
 
       // Static Assets: Models, Images, etc.
       'public/assets/*',
@@ -49,11 +49,11 @@ export default defineConfig({
 
   resolve: {
     alias: {
-      '@proj-airi/stage-ui/components/scenarios/settings/model-settings': resolve(join(import.meta.dirname, '..', '..', 'packages', 'stage-ui', 'src', 'components', 'Scenarios', 'Settings', 'ModelSettings')),
-      '@proj-airi/stage-ui/components/scenes': resolve(join(import.meta.dirname, '..', '..', 'packages', 'stage-ui', 'src', 'components', 'Scenes')),
-      '@proj-airi/stage-ui/stores': resolve(join(import.meta.dirname, '..', '..', 'packages', 'stage-ui', 'src', 'stores')),
-      '@proj-airi/stage-ui': resolve(join(import.meta.dirname, '..', '..', 'packages', 'stage-ui', 'src')),
-      '@proj-airi/i18n': resolve(join(import.meta.dirname, '..', '..', 'packages', 'i18n', 'src')),
+      '@proj-navi/stage-ui/components/scenarios/settings/model-settings': resolve(join(import.meta.dirname, '..', '..', 'packages', 'stage-ui', 'src', 'components', 'Scenarios', 'Settings', 'ModelSettings')),
+      '@proj-navi/stage-ui/components/scenes': resolve(join(import.meta.dirname, '..', '..', 'packages', 'stage-ui', 'src', 'components', 'Scenes')),
+      '@proj-navi/stage-ui/stores': resolve(join(import.meta.dirname, '..', '..', 'packages', 'stage-ui', 'src', 'stores')),
+      '@proj-navi/stage-ui': resolve(join(import.meta.dirname, '..', '..', 'packages', 'stage-ui', 'src')),
+      '@proj-navi/i18n': resolve(join(import.meta.dirname, '..', '..', 'packages', 'i18n', 'src')),
     },
   },
 

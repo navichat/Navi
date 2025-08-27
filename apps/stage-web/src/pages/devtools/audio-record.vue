@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { Button } from '@proj-airi/stage-ui/components'
-import { Option, Select } from '@proj-airi/ui'
+import { Button } from '@proj-navi/stage-ui/components'
+import { Option, Select } from '@proj-navi/ui'
 import { onMounted, onUnmounted } from 'vue'
 
 import { useAudioInput } from '../../composables/audio-input'

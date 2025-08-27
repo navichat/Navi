@@ -1,6 +1,6 @@
 import type { MaybeRefOrGetter } from 'vue'
 
-import { toWav } from '@proj-airi/audio/encoding'
+import { toWav } from '@proj-navi/audio/encoding'
 import { until } from '@vueuse/core'
 import { ref, shallowRef, toRef, watch } from 'vue'
 

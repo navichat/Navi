@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import type { Tool } from '@proj-airi/tauri-plugin-mcp'
+import type { Tool } from '@proj-navi/tauri-plugin-mcp'
 
-import { useMcpStore } from '@proj-airi/stage-ui/stores/mcp'
-import { connectServer, disconnectServer, listTools } from '@proj-airi/tauri-plugin-mcp'
+import { useMcpStore } from '@proj-navi/stage-ui/stores/mcp'
+import { connectServer, disconnectServer, listTools } from '@proj-navi/tauri-plugin-mcp'
 import {
   FieldInput,
-} from '@proj-airi/ui'
+} from '@proj-navi/ui'
 import { storeToRefs } from 'pinia'
 import { ref } from 'vue'
 

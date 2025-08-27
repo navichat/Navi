@@ -21,7 +21,7 @@ First of all, we need to know, there are two basic interations of Live2D: **Focu
 
 首先我们需要了解，在 Live2D 中有两种基础的交互：注视 (focus) 与触碰 (tap)，当我们创建一个 Live2D 画布，模型就会自动注视我们的鼠标位置，头和身体朝向鼠标这一侧。下面是实现后的效果：
 
-![](./assets/airi-tamagotchi-focus.gif)
+![](./assets/navi-tamagotchi-focus.gif)
 
 But, if the cursor is out of web page, Live2D won't know the position of our cursor, so we need to tell the Live2D engine where is our cursor.
 
@@ -97,7 +97,7 @@ Unfortunately, the story is not as simple as I thought. The idea of getting the 
 
 ## Read more<br>阅读更多
 
-In this DevLog, we learned how to get the relative position of cursor to window, and how to set the focus point of Live2D model manually. If you want to know more about the implementation details, you can check the [source code](https://github.com/moeru-ai/airi/pull/194) of this PR.
+In this DevLog, we learned how to get the relative position of cursor to window, and how to set the focus point of Live2D model manually. If you want to know more about the implementation details, you can check the [source code](https://github.com/navichat/navi/pull/194) of this PR.
 
 好了，我们实现了 Live2D 模型在 Tauri 上跟随窗口之外的鼠标位置，这就是本次 DevLog 的全部内容，以下是我在实现过程中查阅的资料，欢迎详细阅读以及讨论：
 

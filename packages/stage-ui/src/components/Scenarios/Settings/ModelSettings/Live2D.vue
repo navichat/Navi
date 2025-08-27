@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Checkbox, FieldRange } from '@proj-airi/ui'
+import { Checkbox, FieldRange } from '@proj-navi/ui'
 import { storeToRefs } from 'pinia'
 import { useI18n } from 'vue-i18n'
 

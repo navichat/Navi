@@ -10,10 +10,10 @@ import {
   ProviderSettingsContainer,
   ProviderSettingsLayout,
   TranscriptionPlayground,
-} from '@proj-airi/stage-ui/components'
-import { useHearingStore } from '@proj-airi/stage-ui/stores/modules/hearing'
-import { useProvidersStore } from '@proj-airi/stage-ui/stores/providers'
-import { FieldInput } from '@proj-airi/ui'
+} from '@proj-navi/stage-ui/components'
+import { useHearingStore } from '@proj-navi/stage-ui/stores/modules/hearing'
+import { useProvidersStore } from '@proj-navi/stage-ui/stores/providers'
+import { FieldInput } from '@proj-navi/ui'
 import { storeToRefs } from 'pinia'
 import { computed, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'

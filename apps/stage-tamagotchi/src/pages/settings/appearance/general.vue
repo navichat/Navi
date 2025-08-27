@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { all } from '@proj-airi/i18n'
-import { useSettings } from '@proj-airi/stage-ui/stores/settings'
-import { FieldCheckbox, FieldSelect } from '@proj-airi/ui'
+import { all } from '@proj-navi/i18n'
+import { useSettings } from '@proj-navi/stage-ui/stores/settings'
+import { FieldCheckbox, FieldSelect } from '@proj-navi/ui'
 import { useDark } from '@vueuse/core'
 import { storeToRefs } from 'pinia'
 import { computed } from 'vue'

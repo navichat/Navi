@@ -3,7 +3,7 @@ import type { Color } from 'culori'
 
 import html2canvas from 'html2canvas'
 
-import { BasicInputFile } from '@proj-airi/ui'
+import { BasicInputFile } from '@proj-navi/ui'
 import { average } from 'culori'
 import { Vibrant } from 'node-vibrant/browser'
 import { computed, nextTick, onMounted, onUnmounted, ref, useTemplateRef, watch } from 'vue'

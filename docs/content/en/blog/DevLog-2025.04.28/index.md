@@ -5,7 +5,7 @@ date: 2025-04-28
 ---
 
 <script setup>
-import airiMcpArch from './assets/airi-mcp-arch.avif'
+import airiMcpArch from './assets/navi-mcp-arch.avif'
 </script>
 
 大家好，这里是 [@LemonNeko](https://github.com/LemonNekoGH)，今天由我来和大家一起分享开发故事。
@@ -21,14 +21,14 @@ import airiMcpArch from './assets/airi-mcp-arch.avif'
 <details>
   <summary>AIRI 的 MCP 服务器设置</summary>
   <video controls muted style="{ height: '640px' }">
-    <source src="./assets/airi-mcp-settings.mp4"/>
+    <source src="./assets/navi-mcp-settings.mp4"/>
   </video>
 </details>
 
 <details>
   <summary>AIRI 在手机上输入 `Hello World`</summary>
   <video controls muted>
-    <source src="./assets/airi-mcp-input-text.mp4"/>
+    <source src="./assets/navi-mcp-input-text.mp4"/>
   </video>
 </details>
 
@@ -126,7 +126,7 @@ fn main() {
 from mcp.server.fastmcp import FastMCP
 from ppadb.client import Client
 
-mcp = FastMCP("airi-android")
+mcp = FastMCP("navi-android")
 adb_client = Client()
 
 @mcp.tool()

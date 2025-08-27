@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { InputFile } from '@proj-airi/ui'
+import { InputFile } from '@proj-navi/ui'
 import { ref } from 'vue'
 
 const files = ref<File[]>([])

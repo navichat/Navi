@@ -1,4 +1,4 @@
-import type { Client } from '@proj-airi/server-sdk'
+import type { Client } from '@proj-navi/server-sdk'
 import type { Neuri } from 'neuri'
 
 import type { Mineflayer } from '../mineflayer'
@@ -25,5 +25,5 @@ export interface MineflayerWithAgents extends Mineflayer {
 
 export interface LLMAgentOptions {
   agent: Neuri
-  airiClient: Client
+  naviClient: Client
 }

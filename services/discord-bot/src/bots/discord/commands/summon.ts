@@ -2,8 +2,8 @@ import type { Readable } from 'node:stream'
 
 import type { AudioPlayer, VoiceConnection, VoiceConnectionState } from '@discordjs/voice'
 import type { Logg } from '@guiiai/logg'
-import type { Client as AiriClient } from '@proj-airi/server-sdk'
-import type { Discord } from '@proj-airi/server-shared/types'
+import type { Client as NaviClient } from '@proj-navi/server-sdk'
+import type { Discord } from '@proj-navi/server-shared/types'
 import type {
   BaseGuildVoiceChannel,
   CacheType,
@@ -71,7 +71,7 @@ export class VoiceManager extends EventEmitter {
 
   private activeAudioPlayer: AudioPlayer | null = null
   private client: DiscordClient
-  private airiClient: AiriClient
+  private naviClient: NaviClient
   private streams: Map<string, Readable> = new Map()
   private connections: Map<string, VoiceConnection> = new Map()
   private activeMonitors: Map<
@@ -79,10 +79,10 @@ export class VoiceManager extends EventEmitter {
     { channel: BaseGuildVoiceChannel, monitor: AudioMonitor }
   > = new Map()
 
-  constructor(client: DiscordClient, airiClient: AiriClient) {
+  constructor(client: DiscordClient, naviClient: NaviClient) {
     super()
     this.client = client
-    this.airiClient = airiClient
+    this.naviClient = naviClient
   }
 
   handleVoiceConnectionStateChange(channel: BaseGuildVoiceChannel, connection: VoiceConnection): (oldState: VoiceConnectionState, newState: VoiceConnectionState) => Promise<void> {
@@ -456,12 +456,12 @@ export class VoiceManager extends EventEmitter {
           guildMember: member,
         } satisfies Discord
 
-        this.airiClient.send({
+        this.naviClient.send({
           type: 'input:text:voice',
           data: { transcription: transcriptionText, discord: discordContext },
         })
 
-        this.airiClient.send({
+        this.naviClient.send({
           type: 'input:text',
           data: { text: transcriptionText, discord: discordContext },
         })

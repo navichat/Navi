@@ -1,5 +1,5 @@
 <script setup lang="ts">
-// import { useServerStore } from '@proj-airi/stage-ui/stores/server'
+// import { useServerStore } from '@proj-navi/stage-ui/stores/server'
 
 // const serverStore = useServerStore()
 </script>

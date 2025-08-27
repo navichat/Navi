@@ -1,4 +1,4 @@
-import type { Card, ccv3 } from '@proj-airi/ccc'
+import type { Card, ccv3 } from '@proj-navi/ccc'
 
 import { useLocalStorage } from '@vueuse/core'
 import { nanoid } from 'nanoid'
@@ -11,7 +11,7 @@ import SystemPromptV2 from '../../constants/prompts/system-v2'
 import { useConsciousnessStore } from './consciousness'
 import { useSpeechStore } from './speech'
 
-export interface AiriExtension {
+export interface NaviExtension {
   modules: {
     consciousness: {
       model: string // Example: "gpt-4o"
@@ -47,14 +47,14 @@ export interface AiriExtension {
   }
 }
 
-export interface AiriCard extends Card {
+export interface NaviCard extends Card {
   extensions: {
-    airi: AiriExtension
+    navi: NaviExtension
   } & Card['extensions']
 }
 
-export const useAiriCardStore = defineStore('airi-card', () => {
-  const cards = useLocalStorage<Map<string, AiriCard>>('airi-cards', new Map())
+export const useNaviCardStore = defineStore('navi-card', () => {
+  const cards = useLocalStorage<Map<string, NaviCard>>('navi-cards', new Map())
   const activeCardId = useLocalStorage('airi-card-active-id', 'default')
 
   const activeCard = computed(() => cards.value.get(activeCardId.value))
@@ -71,9 +71,9 @@ export const useAiriCardStore = defineStore('airi-card', () => {
     activeSpeechModel,
   } = storeToRefs(speechStore)
 
-  const addCard = (card: AiriCard | Card | ccv3.CharacterCardV3) => {
+  const addCard = (card: NaviCard | Card | ccv3.CharacterCardV3) => {
     const newCardId = nanoid()
-    cards.value.set(newCardId, newAiriCard(card))
+    cards.value.set(newCardId, newNaviCard(card))
     return newCardId
   }
 
@@ -85,11 +85,11 @@ export const useAiriCardStore = defineStore('airi-card', () => {
     return cards.value.get(id)
   }
 
-  function resolveAiriExtension(card: Card | ccv3.CharacterCardV3): AiriExtension {
+  function resolveNaviExtension(card: Card | ccv3.CharacterCardV3): NaviExtension {
     // Get existing extension if available
     const existingExtension = ('data' in card
       ? card.data?.extensions?.airi
-      : card.extensions?.airi) as AiriExtension
+      : card.extensions?.airi) as NaviExtension
 
     // Create default modules config
     const defaultModules = {
@@ -131,7 +131,7 @@ export const useAiriCardStore = defineStore('airi-card', () => {
     }
   }
 
-  function newAiriCard(card: Card | ccv3.CharacterCardV3): AiriCard {
+  function newNaviCard(card: Card | ccv3.CharacterCardV3): NaviCard {
     // Handle ccv3 format if needed
     if ('data' in card) {
       const ccv3Card = card as ccv3.CharacterCardV3
@@ -164,7 +164,7 @@ export const useAiriCardStore = defineStore('airi-card', () => {
           : [],
         tags: ccv3Card.data.tags ?? [],
         extensions: {
-          airi: resolveAiriExtension(ccv3Card),
+          airi: resolveNaviExtension(ccv3Card),
           ...ccv3Card.data.extensions,
         },
       }
@@ -173,7 +173,7 @@ export const useAiriCardStore = defineStore('airi-card', () => {
     return {
       ...card,
       extensions: {
-        airi: resolveAiriExtension(card),
+        airi: resolveNaviExtension(card),
         ...card.extensions,
       },
     }
@@ -182,7 +182,7 @@ export const useAiriCardStore = defineStore('airi-card', () => {
   onMounted(() => {
     const { t } = useI18n()
 
-    cards.value.set('default', newAiriCard({
+    cards.value.set('default', newNaviCard({
       name: 'ReLU',
       version: '1.0.0',
       // description: 'ReLU is a simple and effective activation function that is used in many neural networks.',
@@ -193,13 +193,13 @@ export const useAiriCardStore = defineStore('airi-card', () => {
     }))
   })
 
-  watch(activeCard, (newCard: AiriCard | undefined) => {
+  watch(activeCard, (newCard: NaviCard | undefined) => {
     if (!newCard)
       return
 
     // TODO: live2d, vrm
     // TODO: Minecraft Agent, etc
-    const extension = resolveAiriExtension(newCard)
+    const extension = resolveNaviExtension(newCard)
     if (!extension)
       return
 
@@ -225,7 +225,7 @@ export const useAiriCardStore = defineStore('airi-card', () => {
           model: activeSpeechModel.value,
           voice_id: activeSpeechVoiceId.value,
         },
-      } satisfies AiriExtension['modules']
+      } satisfies NaviExtension['modules']
     }),
 
     systemPrompt: computed(() => {

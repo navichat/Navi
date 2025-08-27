@@ -100,7 +100,7 @@ RAG 现在会流行一个新的流程，就是 reranking model，相当于是**�
 
 ## 记忆层实验平台
 
-[Project AIRI Memory Driver @duckdb/duckdb-wasm Playground](https://drizzle-orm-duckdb-wasm.netlify.app/#/memory-decay)
+[Project NAVI Memory Driver @duckdb/duckdb-wasm Playground](https://drizzle-orm-duckdb-wasm.netlify.app/#/memory-decay)
 
 ![](./assets/memory-driver.avif)
 

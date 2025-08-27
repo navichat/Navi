@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { BidirectionalTransition } from '@proj-airi/ui'
+import { BidirectionalTransition } from '@proj-navi/ui'
 import { computed } from 'vue'
 
 // Define button variants for better type safety and maintainability

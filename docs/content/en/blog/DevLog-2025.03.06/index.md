@@ -17,7 +17,7 @@ into a reusable Vue component for any of the Vue project to be able to use it.
 > [https://airi.build/references/design-guidelines/resources/](../references/design-guidelines/resources/).
 
 The result is quite good, already deployed to
-[https://proj-airi-packages-ui-transitions.netlify.app/#/](https://proj-airi-packages-ui-transitions.netlify.app/#/).
+[https://proj-navi-packages-ui-transitions.netlify.app/#/](https://proj-navi-packages-ui-transitions.netlify.app/#/).
 
 ![](./assets/animation-transitions.gif)
 
@@ -40,7 +40,7 @@ on.
 And I ported 3 extra new animation transitions from
 [https://cowardly-witch.netlify.app/](https://cowardly-witch.netlify.app/),
 they were already available on
-[https://proj-airi-packages-ui-transitions.netlify.app/#/](https://proj-airi-packages-ui-transitions.netlify.app/#/) .
+[https://proj-navi-packages-ui-transitions.netlify.app/#/](https://proj-navi-packages-ui-transitions.netlify.app/#/) .
 
 I deployed the official documentation site onto [https://airi.build](https://airi.build) yesterday,
 [@kwaa](https://github.com/kwaa) commented that he would suggest me try
@@ -82,7 +82,7 @@ During the DevStream of today, I was trying to integrate the stage transition
 animation component into AIRI's website main stage, it wasn't that smooth,
 I found several bugs in my previous design for the animation component, good
 news is that I already fixed them, and the new animation transition is available
-already at our official deployment at [https://airi.moeru.ai](https://airi.moeru.ai).
+already at our official deployment at [https://navi.navichat.ai](https://navi.navichat.ai).
 
 I finally made the decision that coming from some random thoughts about the module
 configuration UI and settings page. They were all implemented, and went on live,

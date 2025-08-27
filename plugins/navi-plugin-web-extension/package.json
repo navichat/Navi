@@ -1,5 +1,5 @@
 {
-  "name": "@proj-airi/airi-plugin-web-extension",
+  "name": "@proj-navi/airi-plugin-web-extension",
   "type": "module",
   "version": "0.7.2-beta.2",
   "private": true,

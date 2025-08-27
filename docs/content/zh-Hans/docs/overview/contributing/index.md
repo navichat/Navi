@@ -1,6 +1,6 @@
 ---
 title: 参与项目指南
-description: 参与并贡献 Project AIRI
+description: 参与并贡献 Project NAVI
 ---
 
 你好呀！感谢你有兴趣参与这个项目。本指南将帮助你快速上手
@@ -117,7 +117,7 @@ git rebase main
 
 ## Fork 本项目
 
-请点击 [moeru-ai/airi](https://github.com/moeru-ai/airi) 页面右上角的 **Fork** 按钮来 fork（分叉一个归属于你的账户的副本）本项目。
+请点击 [navichat/navi](https://github.com/navichat/navi) 页面右上角的 **Fork** 按钮来 fork（分叉一个归属于你的账户的副本）本项目。
 
 ## 克隆本项目
 
@@ -178,7 +178,7 @@ nr dev:tamagotchi
 
 :::
 
-### 网页端 ([airi.moeru.ai](https://airi.moeru.ai))
+### 网页端 ([navi.navichat.ai](https://navi.navichat.ai))
 
 ```shell
 pnpm dev
@@ -230,14 +230,14 @@ cp .env .env.local
 执行数据库迁移：
 
 ```shell
-pnpm -F @proj-airi/telegram-bot db:generate
-pnpm -F @proj-airi/telegram-bot db:push
+pnpm -F @proj-navi/telegram-bot db:generate
+pnpm -F @proj-navi/telegram-bot db:push
 ```
 
 启动机器人：
 
 ```shell
-pnpm -F @proj-airi/telegram-bot start
+pnpm -F @proj-navi/telegram-bot start
 ```
 
 ::: tip
@@ -245,7 +245,7 @@ pnpm -F @proj-airi/telegram-bot start
 如果你使用 [@antfu/ni](https://github.com/antfu-collective/ni)，你可以：
 
 ```shell
-nr -F @proj-airi/telegram-bot dev
+nr -F @proj-navi/telegram-bot dev
 ```
 
 :::
@@ -267,7 +267,7 @@ cp .env .env.local
 启动机器人：
 
 ```shell
-pnpm -F @proj-airi/discord-bot start
+pnpm -F @proj-navi/discord-bot start
 ```
 
 ::: tip
@@ -275,7 +275,7 @@ pnpm -F @proj-airi/discord-bot start
 如果你使用 [@antfu/ni](https://github.com/antfu-collective/ni)，你可以：
 
 ```shell
-nr -F @proj-airi/discord-bot dev
+nr -F @proj-navi/discord-bot dev
 ```
 
 :::
@@ -299,7 +299,7 @@ cp .env .env.local
 启动机器人：
 
 ```shell
-pnpm -F @proj-airi/minecraft-bot start
+pnpm -F @proj-navi/minecraft-bot start
 ```
 
 ::: tip
@@ -307,7 +307,7 @@ pnpm -F @proj-airi/minecraft-bot start
 如果你使用 [@antfu/ni](https://github.com/antfu-collective/ni)，你可以：
 
 ```shell
-nr -F @proj-airi/minecraft-bot dev
+nr -F @proj-navi/minecraft-bot dev
 ```
 
 :::
@@ -356,14 +356,14 @@ git push origin <your-branch-name> -u
 如果这是你第一次贡献本项目，请添加上游（upstream，指向本项目）：
 
 ```shell
-git remote add upstream https://github.com/moeru-ai/airi.git
+git remote add upstream https://github.com/navichat/navi.git
 ```
 
 :::
 
 ## 创建拉取请求（Pull Request）
 
-请前往 [moeru-ai/airi](https://github.com/moeru-ai/airi) 页面：
+请前往 [navichat/navi](https://github.com/navichat/navi) 页面：
 
 * 点击 **Pull requests** 按钮；
 * 再点击 **New pull request** 按钮；

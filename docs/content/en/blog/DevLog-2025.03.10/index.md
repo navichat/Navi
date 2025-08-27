@@ -37,21 +37,21 @@ implementing this dotted effect for the buttons:
 
 During the development, we found that some of the packages that currently living
 under the `packages/` directory are actually independent packages that were not
-even in the workflow of Project AIRI.
+even in the workflow of Project NAVI.
 
 This means we can now move them out to another place to simplify the installation
 sizes and building process for the primary repository
-[airi](https://github.com/moeru-ai/airi).
+[airi](https://github.com/navichat/navi).
 
 > Where do we go?
 
-Nice question! We got [`@proj-airi`](https://github.com/proj-airi) already
+Nice question! We got [`@proj-navi`](https://github.com/proj-airi) already
 registered on GitHub as a organization, since many of the packages and static
 applications were not useful for Moeru AI too, perhaps we can move those
-packages to [`@proj-airi`](https://github.com/proj-airi).
+packages to [`@proj-navi`](https://github.com/proj-airi).
 
 So, we moved some of the packages and applications into
-[`@proj-airi`](https://github.com/proj-airi) organization! You can check them out:
+[`@proj-navi`](https://github.com/proj-airi) organization! You can check them out:
 
 - https://github.com/proj-airi/webai-examples : meant to make demos with WebGPU and
   related stuff.
@@ -68,9 +68,9 @@ online and helped us to make the wave animation on stage in pure CSS!
 
 You can go through the commits to learn from him/her:
 
-- https://github.com/moeru-ai/airi/pull/54
-- https://github.com/moeru-ai/airi/pull/55
-- https://github.com/moeru-ai/airi/pull/65
+- https://github.com/navichat/navi/pull/54
+- https://github.com/navichat/navi/pull/55
+- https://github.com/navichat/navi/pull/65
 
 Much appreciated to [@sumimakito](https://github.com/sumimakito) and
 [@junkwarrior87](https://github.com/junkwarrior87) on helping fixing and improving the
@@ -84,10 +84,10 @@ colors for the entire stage! (I never thought this could be done within hours...
   <source src="./assets/customizable-theme-colors.mp4">
 </video>
 
-- https://github.com/moeru-ai/airi/pull/53
-- https://github.com/moeru-ai/airi/pull/60
-- https://github.com/moeru-ai/airi/pull/61
-- https://github.com/moeru-ai/airi/pull/63
+- https://github.com/navichat/navi/pull/53
+- https://github.com/navichat/navi/pull/60
+- https://github.com/navichat/navi/pull/61
+- https://github.com/navichat/navi/pull/63
 
 They even made it possible for the logo to follow the customizable colors 🤯.
 
@@ -109,7 +109,7 @@ kept the feature that making the color hue shines through the entire RGB spectru
 that demonstrated previously by [@LemonNekoGH](https://github.com/LemonNekoGH), it's
 called "I Want It Dynamic!" (You can think of this as a **RGB ON** feature 😂):
 
-- https://github.com/moeru-ai/airi/pull/64
+- https://github.com/navichat/navi/pull/64
 
 ## DevStream
 

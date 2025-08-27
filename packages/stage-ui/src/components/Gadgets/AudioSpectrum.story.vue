@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { FieldRange, Radio } from '@proj-airi/ui'
+import { FieldRange, Radio } from '@proj-navi/ui'
 import { onBeforeUnmount, ref, watch } from 'vue'
 
 import AudioSpectrum from './AudioSpectrum.vue'

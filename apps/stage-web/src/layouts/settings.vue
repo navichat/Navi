@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { PageHeader } from '@proj-airi/stage-ui/components'
-import { useProvidersStore } from '@proj-airi/stage-ui/stores/providers'
+import { PageHeader } from '@proj-navi/stage-ui/components'
+import { useProvidersStore } from '@proj-navi/stage-ui/stores/providers'
 import { useDark } from '@vueuse/core'
 import { storeToRefs } from 'pinia'
 import { computed, onMounted, watch } from 'vue'
@@ -19,7 +19,7 @@ const { allProvidersMetadata } = storeToRefs(providersStore)
 
 const routeHeaderMetadataMap = computed(() => {
   const map: Record<string, { subtitle?: string, title: string }> = {
-    '/settings/airi-card': {
+    '/settings/navi-card': {
       subtitle: t('settings.title'),
       title: t('settings.pages.card.title'),
     },
