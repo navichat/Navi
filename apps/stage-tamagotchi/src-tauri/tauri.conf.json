@@ -1,8 +1,8 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
-  "productName": "AIRI",
+  "productName": "NAVI",
   "version": "../package.json",
-  "identifier": "ai.moeru.airi-tamagotchi",
+  "identifier": "ai.navichat.navi-tamagotchi",
   "build": {
     "frontendDist": "../dist",
     "devUrl": "http://localhost:5173",
