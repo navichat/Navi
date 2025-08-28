@@ -138,7 +138,7 @@ function getVersionNumber(id: string) {
 // Card module short name
 function getModuleShortName(id: string, module: 'consciousness' | 'voice') {
   const card = cards.value.get(id)
-  if (!card || !card.extensions?.airi?.modules)
+  if (!card || !card.extensions?.navi?.modules)
     return 'default'
 
   const naviExt = card.extensions.navi.modules

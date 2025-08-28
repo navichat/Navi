@@ -18,8 +18,8 @@ import { Callout } from '@proj-navi/stage-ui/components'
       theme="orange"
     >
       <div>
-        This functionality is still under development. If you have any suggestions or would like to contribute, please reach out to us on our <a underline decoration-dotted href="https://github.com/moeru-ai/airi/issues">GitHub issues page</a>.
-        The source code of this page is located at <a underline decoration-dotted href="https://github.com/moeru-ai/airi/tree/main/apps/stage-tamagotchi/src/pages/settings/memory/index.vue">here</a>.
+        This functionality is still under development. If you have any suggestions or would like to contribute, please reach out to us on our <a underline decoration-dotted href="https://github.com/navichat/Navi/issues">GitHub issues page</a>.
+        The source code of this page is located at <a underline decoration-dotted href="https://github.com/navichat/Navi/tree/main/apps/stage-tamagotchi/src/pages/settings/memory/index.vue">here</a>.
       </div>
     </Callout>
   </div>

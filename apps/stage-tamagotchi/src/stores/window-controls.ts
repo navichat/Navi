@@ -1,4 +1,4 @@
-import type { AiriTamagotchiEvents } from '../composables/tauri'
+import type { NaviTamagotchiEvents } from '../composables/tauri'
 
 import { getCurrentWindow } from '@tauri-apps/api/window'
 import { defineStore } from 'pinia'
@@ -39,7 +39,7 @@ export const useWindowControlStore = defineStore('windowControl', () => {
 })
 
 export const useWindowMode = defineStore('window-mode', () => {
-  const { listen } = useTauriEvent<AiriTamagotchiEvents>()
+  const { listen } = useTauriEvent<NaviTamagotchiEvents>()
   const windowStore = useWindowControlStore()
 
   const unlistenFuncs = ref<(() => void)[]>([])

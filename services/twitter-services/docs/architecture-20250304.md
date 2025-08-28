@@ -205,7 +205,7 @@ interface Config {
 
   // Adapter configuration
   adapters: {
-    airi?: {
+    navi?: {
       url?: string
       token?: string
       enabled: boolean
@@ -291,27 +291,27 @@ async function main() {
 }
 ```
 
-### 9.2 Integrating as AIRI Module
+### 9.2 Integrating as NAVI Module
 
 ```typescript
-import { AIRIAdapter, BrowserBaseMCPAdapter, TwitterService } from 'twitter-services'
+import { NaviAdapter, BrowserBaseMCPAdapter, TwitterService } from 'twitter-services'
 
-async function startAIRIModule() {
+async function startNaviModule() {
   const browser = new BrowserBaseMCPAdapter(process.env.BROWSERBASE_API_KEY)
   await browser.initialize({ headless: true })
 
   const twitter = new TwitterService(browser)
 
-  // Create AIRI adapter
-  const airiAdapter = new AIRIAdapter(twitter, {
-    url: process.env.AIRI_URL,
-    token: process.env.AIRI_TOKEN
+  // Create NAVI adapter
+  const naviAdapter = new NaviAdapter(twitter, {
+    url: process.env.NAVI_URL,
+    token: process.env.NAVI_TOKEN
   })
 
   // Start adapter
-  await airiAdapter.start()
+  await naviAdapter.start()
 
-  console.log('Twitter service running as AIRI module')
+  console.log('Twitter service running as NAVI module')
 }
 ```
 

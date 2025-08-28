@@ -1,6 +1,6 @@
 import type { MaybeRefOrGetter } from 'vue'
 
-import type { AiriTamagotchiEvents, Point, WindowFrame } from './tauri'
+import type { NaviTamagotchiEvents, Point, WindowFrame } from './tauri'
 
 import { onMounted, onUnmounted, ref, toValue, watch } from 'vue'
 
@@ -9,7 +9,7 @@ import { useAppRuntime } from './runtime'
 import { useTauriCore, useTauriEvent } from './tauri'
 
 export function useTauriPointAndWindowFrame() {
-  const { listen } = useTauriEvent<AiriTamagotchiEvents>()
+  const { listen } = useTauriEvent<NaviTamagotchiEvents>()
   const { invoke } = useTauriCore()
 
   const unListenFuncs = ref<(() => void)[]>([])

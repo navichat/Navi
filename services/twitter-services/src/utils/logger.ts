@@ -65,7 +65,7 @@ export const logger = {
   auth: useLogger('auth-service'),
   timeline: useLogger('timeline-service'),
   browser: useLogger('browser-adapter'),
-  airi: useLogger('airi-adapter'),
+  navi: useLogger('navi-adapter'),
   mcp: useLogger('mcp-adapter'),
   parser: useLogger('parser'),
   main: useLogger('twitter-service'),

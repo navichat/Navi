@@ -1,5 +1,5 @@
 /**
- * Airi Adapter
- * Adapts the Twitter service as an Airi module
+ * Navi Adapter
+ * Adapts the Twitter service as a Navi module
  */
-export class AiriAdapter {}
+export class NaviAdapter {}

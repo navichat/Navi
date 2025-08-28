@@ -40,7 +40,7 @@ onMounted(async () => {
     const res = await fetch(`${baseUrl.value}health`, {
       method: 'GET',
       headers: {
-        'player2-game-key': 'airi',
+        'player2-game-key': 'navi',
       },
     })
     hasPlayer2.value = res.status === 200

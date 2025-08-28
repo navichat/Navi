@@ -68,7 +68,7 @@ async function getTools() {
             type="text"
             label="Server Arguments"
             description="Enter the server command arguments"
-            placeholder="run -i --rm -e ADB_HOST=host.docker.internal ghcr.io/lemonnekogh/airi-android:v0.1.0"
+            placeholder="run -i --rm -e ADB_HOST=host.docker.internal ghcr.io/lemonnekogh/navi-android:v0.1.0"
             :disabled="connecting || connected"
           />
 

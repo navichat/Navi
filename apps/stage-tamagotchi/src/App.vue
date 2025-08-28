@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { AiriTamagotchiEvents } from './composables/tauri'
+import type { NaviTamagotchiEvents } from './composables/tauri'
 
 import { useDisplayModelsStore } from '@proj-navi/stage-ui/stores/display-models'
 import { useMcpStore } from '@proj-navi/stage-ui/stores/mcp'
@@ -25,7 +25,7 @@ const onboardingStore = useOnboardingStore()
 const { shouldShowSetup } = storeToRefs(onboardingStore)
 
 const mcpStore = useMcpStore()
-const { listen } = useTauriEvent<AiriTamagotchiEvents>()
+const { listen } = useTauriEvent<NaviTamagotchiEvents>()
 const { platform } = useAppRuntime()
 
 watch(language, () => {

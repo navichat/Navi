@@ -1,4 +1,4 @@
-import type { AiriTamagotchiEvents } from './tauri'
+import type { NaviTamagotchiEvents } from './tauri'
 
 import { createSharedComposable } from '@vueuse/core'
 import { ref } from 'vue'
@@ -9,7 +9,7 @@ export const useRdevMouse = createSharedComposable(() => {
   const mouseX = ref(0)
   const mouseY = ref(0)
 
-  const { listen } = useTauriEvent<AiriTamagotchiEvents>()
+  const { listen } = useTauriEvent<NaviTamagotchiEvents>()
 
   async function setup() {
     await listen('tauri-plugins:tauri-plugin-rdev:mousemove', (event) => {

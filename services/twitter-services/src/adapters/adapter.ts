@@ -1,26 +1,26 @@
 import type { Config } from '../config/types'
 import type { Context } from '../core/browser/context'
-import type { AiriAdapter } from './airi-adapter'
+import type { NaviAdapter } from './navi-adapter'
 import type { MCPAdapter } from './mcp-adapter'
 
 import { logger } from '../utils/logger'
 
 export function useAdapter() {
-  const adapters: { airi?: AiriAdapter, mcp?: MCPAdapter } = {}
+  const adapters: { navi?: NaviAdapter, mcp?: MCPAdapter } = {}
 
-  async function initAdapters(config: Config, ctx: Context): Promise<{ airi?: AiriAdapter, mcp?: MCPAdapter }> {
-    // if (config.adapters.airi?.enabled) {
-    //   logger.main.log('Starting Airi adapter...')
-    //   const { AiriAdapter } = await import('./adapters/airi-adapter')
+  async function initAdapters(config: Config, ctx: Context): Promise<{ navi?: NaviAdapter, mcp?: MCPAdapter }> {
+    // if (config.adapters.navi?.enabled) {
+    //   logger.main.log('Starting Navi adapter...')
+    //   const { NaviAdapter } = await import('./adapters/navi-adapter')
 
-    //   adapters.airi = new AiriAdapter(twitterService, {
-    //     url: config.adapters.airi.url,
-    //     token: config.adapters.airi.token,
+    //   adapters.navi = new NaviAdapter(twitterService, {
+    //     url: config.adapters.navi.url,
+    //     token: config.adapters.navi.token,
     //     credentials: {},
     //   })
 
-    //   await adapters.airi.start()
-    //   logger.main.log('Airi adapter started')
+    //   await adapters.navi.start()
+    //   logger.main.log('Navi adapter started')
     // }
 
     if (config.adapters.mcp?.enabled) {

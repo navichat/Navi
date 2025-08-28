@@ -58,7 +58,7 @@ onMounted(async () => {
     const res = await fetch(`${baseUrl.endsWith('/') ? baseUrl.slice(0, -1) : baseUrl}/health`, {
       method: 'GET',
       headers: {
-        'player2-game-key': 'airi',
+        'player2-game-key': 'navi',
       },
     })
     hasPlayer2.value = res.status === 200

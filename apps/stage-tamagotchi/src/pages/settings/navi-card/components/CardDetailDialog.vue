@@ -40,7 +40,7 @@ const selectedCard = computed<NaviCard | undefined>(() => {
 
 // Get module settings
 const moduleSettings = computed(() => {
-  if (!selectedCard.value || !selectedCard.value.extensions?.airi?.modules) {
+  if (!selectedCard.value || !selectedCard.value.extensions?.navi?.modules) {
     return {
       consciousness: '',
       speech: '',

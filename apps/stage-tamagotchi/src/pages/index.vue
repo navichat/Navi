@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { AiriTamagotchiEvents, Point } from '../composables/tauri'
+import type { NaviTamagotchiEvents, Point } from '../composables/tauri'
 
 import { WidgetStage } from '@proj-navi/stage-ui/components/scenes'
 import { useLive2d } from '@proj-navi/stage-ui/stores/live2d'
@@ -27,7 +27,7 @@ const mcpStore = useMcpStore()
 const { getPosition } = useTauriWindow()
 const { mouseX, mouseY } = useRdevMouse()
 
-const { listen } = useTauriEvent<AiriTamagotchiEvents>()
+const { listen } = useTauriEvent<NaviTamagotchiEvents>()
 const { invoke } = useTauriCore()
 const { connected, serverCmd, serverArgs } = storeToRefs(mcpStore)
 const { scale, positionInPercentageString } = storeToRefs(useLive2d())

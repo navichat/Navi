@@ -53,7 +53,7 @@ export async function imagineAnAction(
     ),
   )
 
-  const tracer = trace.getTracer('airi-telegram-bot')
+  const tracer = trace.getTracer('navi-telegram-bot')
 
   return await tracer.startActiveSpan('agent-generate-action', async (span) => {
     let responseText = ''
