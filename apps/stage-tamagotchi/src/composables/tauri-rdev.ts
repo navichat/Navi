@@ -1,4 +1,4 @@
-import type { AiriTamagotchiEvents } from './tauri'
+import type { NaviTamagotchiEvents } from './tauri'
 
 import { onMounted, onUnmounted } from 'vue'
 
@@ -9,7 +9,7 @@ export function useTauriRdevEventTarget(): EventTarget {
   const unListenFuncs: (() => void)[] = []
   const eventTarget = new EventTarget()
 
-  const { listen } = useTauriEvent<AiriTamagotchiEvents>()
+  const { listen } = useTauriEvent<NaviTamagotchiEvents>()
 
   async function setup() {
     window.addEventListener('keyup', (event) => {

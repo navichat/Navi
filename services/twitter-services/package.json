@@ -1,5 +1,5 @@
 {
-  "name": "@proj-airi/twitter-services",
+  "name": "@proj-navi/twitter-services",
   "type": "module",
   "version": "0.7.2-beta.2",
   "private": true,
@@ -16,7 +16,7 @@
     "@guiiai/logg": "^1.0.10",
     "@modelcontextprotocol/sdk": "^1.17.1",
     "@moeru/std": "catalog:",
-    "@proj-airi/server-sdk": "^0.7.0-beta.1",
+    "@proj-navi/server-sdk": "^0.7.0-beta.1",
     "dotenv": "^17.2.1",
     "h3": "^1.15.4",
     "listhen": "^1.9.0",

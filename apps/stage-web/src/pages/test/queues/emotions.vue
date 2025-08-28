@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import type { Emotion } from '@proj-airi/stage-ui/constants/emotions'
+import type { Emotion } from '@proj-navi/stage-ui/constants/emotions'
 
-import { useQueue } from '@proj-airi/stage-ui/composables/queue'
-import { useEmotionsMessageQueue } from '@proj-airi/stage-ui/composables/queues'
-import { llmInferenceEndToken } from '@proj-airi/stage-ui/constants'
-import { Textarea } from '@proj-airi/ui'
+import { useQueue } from '@proj-navi/stage-ui/composables/queue'
+import { useEmotionsMessageQueue } from '@proj-navi/stage-ui/composables/queues'
+import { llmInferenceEndToken } from '@proj-navi/stage-ui/constants'
+import { Textarea } from '@proj-navi/ui'
 import { ref } from 'vue'
 
 const messageInput = ref<string>('')

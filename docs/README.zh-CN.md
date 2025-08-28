@@ -17,12 +17,12 @@
 <p align="center">模型驱动的灵魂容器，什么都能做一点的桌宠：让 Neuro-sama 这样的虚拟伴侣也成为我们世界中的一份子吧！</p>
 
 <p align="center">
-  [<a href="https://discord.gg/TgQ3Cu2F7A">加入 Discord</a>] [<a href="https://airi.moeru.ai">试试看</a>] [<a href="https://github.com/moeru-ai/airi/blob/main/README.md">English</a>] [<a href="https://github.com/moeru-ai/airi/blob/main/docs/README.ja-JP.md">日本語</a>]
+  [<a href="https://discord.gg/TgQ3Cu2F7A">加入 Discord</a>] [<a href="https://navi.navichat.ai">试试看</a>] [<a href="https://github.com/navichat/navi/blob/main/README.md">English</a>] [<a href="https://github.com/navichat/navi/blob/main/docs/README.ja-JP.md">日本語</a>]
 </p>
 
 <p align="center">
   <a href="https://deepwiki.com/moeru-ai/airi"><img src="https://deepwiki.com/badge.svg"></a>
-  <a href="https://github.com/moeru-ai/airi/blob/main/LICENSE"><img src="https://img.shields.io/github/license/moeru-ai/airi.svg?style=flat&colorA=080f12&colorB=1fa669"></a>
+  <a href="https://github.com/navichat/navi/blob/main/LICENSE"><img src="https://img.shields.io/github/license/moeru-ai/airi.svg?style=flat&colorA=080f12&colorB=1fa669"></a>
   <a href="https://discord.gg/TgQ3Cu2F7A"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdiscord.com%2Fapi%2Finvites%2FTgQ3Cu2F7A%3Fwith_counts%3Dtrue&query=%24.approximate_member_count&suffix=%20members&logo=discord&logoColor=white&label=%20&color=7389D8&labelColor=6A7EC2"></a>
   <a href="https://x.com/proj_airi"><img src="https://img.shields.io/badge/%40proj__airi-black?style=flat&logo=x&labelColor=%23101419&color=%232d2e30"></a>
   <a href="https://t.me/+7M_ZKO3zUHFlOThh"><img src="https://img.shields.io/badge/Telegram-%235AA9E6?logo=telegram&labelColor=FFFFFF"></a>
@@ -85,7 +85,7 @@
 > - Three.js
 > - WebXR (也可以看看我们在 @moeru-ai 组织下另外的[这个项目](https://github.com/moeru-ai/chat))
 >
-> **如果你已经感兴趣了，为什么不来这里和大家打个招呼呢？[Would like to join part of us to build AIRI?](https://github.com/moeru-ai/airi/discussions/33)**
+> **如果你已经感兴趣了，为什么不来这里和大家打个招呼呢？[Would like to join part of us to build AIRI?](https://github.com/navichat/navi/discussions/33)**
 
 ## 当前进度
 
@@ -130,7 +130,7 @@ pnpm i
 pnpm dev
 ```
 
-### 网页版 (也就是 [airi.moeru.ai](https://airi.moeru.ai) 的版本)
+### 网页版 (也就是 [navi.navichat.ai](https://navi.navichat.ai) 的版本)
 
 ```shell
 pnpm dev:web
@@ -183,19 +183,19 @@ pnpm -F @proj-airi/docs dev
 
 - [`unspeech`](https://github.com/moeru-ai/unspeech): 用于代理 `/audio/transcriptions` 和 `/audio/speech` 的代理服务器实现，类似 LiteLLM 但面向任何 ASR 和 TTS
 - [`hfup`](https://github.com/moeru-ai/hfup): 帮助部署、打包到 HuggingFace Spaces 的工具集
-- [`@proj-airi/drizzle-duckdb-wasm`](https://github.com/moeru-ai/airi/tree/main/packages/drizzle-duckdb-wasm/README.md): DuckDB WASM 的 Drizzle ORM driver 驱动
-- [`@proj-airi/duckdb-wasm`](https://github.com/moeru-ai/airi/tree/main/packages/duckdb-wasm/README.md): 易于使用的 `@duckdb/duckdb-wasm` 封装
+- [`@proj-airi/drizzle-duckdb-wasm`](https://github.com/navichat/navi/tree/main/packages/drizzle-duckdb-wasm/README.md): DuckDB WASM 的 Drizzle ORM driver 驱动
+- [`@proj-airi/duckdb-wasm`](https://github.com/navichat/navi/tree/main/packages/duckdb-wasm/README.md): 易于使用的 `@duckdb/duckdb-wasm` 封装
 - [`@proj-airi/lobe-icons`](https://github.com/proj-airi/lobe-icons): 为 [lobe-icons](https://github.com/lobehub/lobe-icons) 漂亮的 AI & LLM 图标制作的 Iconify JSON 封装，支持 Tailwind 和 UnoCSS
-- [AIRI Factorio](https://github.com/moeru-ai/airi-factorio): 让 AIRI 玩 Factorio
+- [AIRI Factorio](https://github.com/navichat/navi-factorio): 让 AIRI 玩 Factorio
 - [Factorio RCON API](https://github.com/nekomeowww/factorio-rcon-api): Factorio 无头服务器控制台的 RESTful API 封装
-- [`autorio`](https://github.com/moeru-ai/airi-factorio/tree/main/packages/autorio): Factorio 自动化库
-- [`tstl-plugin-reload-factorio-mod`](https://github.com/moeru-ai/airi-factorio/tree/main/packages/tstl-plugin-reload-factorio-mod): 开发时支持热重载 Factorio 模组
+- [`autorio`](https://github.com/navichat/navi-factorio/tree/main/packages/autorio): Factorio 自动化库
+- [`tstl-plugin-reload-factorio-mod`](https://github.com/navichat/navi-factorio/tree/main/packages/tstl-plugin-reload-factorio-mod): 开发时支持热重载 Factorio 模组
 - [🥺 SAD](https://github.com/moeru-ai/sad): 自托管和浏览器运行 LLM 的文档和说明
 - [Velin](https://github.com/luoling8192/velin): 用 Vue SFC 和 Markdown 文件来为 LLM 书写简单好用的提示词
 - [`demodel`](https://github.com/moeru-ai/demodel): 轻松加速各种推理引擎和模型下载器拉/下载模型或数据集的速度
 - [`inventory`](https://github.com/moeru-ai/inventory): 中心化模型目录和默认服务来源配置的公开 API 服务
 - [MCP Launcher](https://github.com/moeru-ai/mcp-launcher): 易于使用的 MCP 启动器，适用于所有可能的 MCP Server，就像用于模型推理的 Ollama 一样！
-- ~~[`@proj-airi/elevenlabs`](https://github.com/moeru-ai/airi/tree/main/packages/elevenlabs): ElevenLabs API 的类型定义~~
+- ~~[`@proj-airi/elevenlabs`](https://github.com/navichat/navi/tree/main/packages/elevenlabs): ElevenLabs API 的类型定义~~
 
 ```mermaid
 %%{ init: { 'flowchart': { 'curve': 'catmullRom' } } }%%

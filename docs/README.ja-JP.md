@@ -12,18 +12,18 @@
   <img width="250" src="./content/public/banner-light-1280x640.avif" />
 </picture>
 
-<h1 align="center">Project AIRI</h1>
+<h1 align="center">Project NAVI</h1>
 
 <p align="center">モデル駆動の魂の容器、ちょっとしたことができるデスクペット。</p>
 <p align="center">Neuro-samaのようなバーチャルペアも私たちの世界の一部にしましょう！</p>
 
 <p align="center">
-  [<a href="https://discord.gg/TgQ3Cu2F7A">Discordサーバーに参加する</a>] [<a href="https:///airi.moeru.ai">試してみる</a>] [<a href="https://github.com/moeru-ai/airi/blob/main/README.md">English</a>] [<a href="https://github.com/moeru-ai/airi/blob/main/docs/README.zh-CN.md">简体中文</a>]
+  [<a href="https://discord.gg/TgQ3Cu2F7A">Discordサーバーに参加する</a>] [<a href="https:///navi.navichat.ai">試してみる</a>] [<a href="https://github.com/navichat/navi/blob/main/README.md">English</a>] [<a href="https://github.com/navichat/navi/blob/main/docs/README.zh-CN.md">简体中文</a>]
 </p>
 
 <p align="center">
-  <a href="https://deepwiki.com/moeru-ai/airi"><img src="https://deepwiki.com/badge.svg"></a>
-  <a href="https://github.com/moeru-ai/airi/blob/main/LICENSE"><img src="https://img.shields.io/github/license/moeru-ai/airi.svg?style=flat&colorA=080f12&colorB=1fa669"></a>
+  <a href="https://deepwiki.com/navichat/navi"><img src="https://deepwiki.com/badge.svg"></a>
+  <a href="https://github.com/navichat/navi/blob/main/LICENSE"><img src="https://img.shields.io/github/license/navichat/navi.svg?style=flat&colorA=080f12&colorB=1fa669"></a>
   <a href="https://discord.gg/TgQ3Cu2F7A"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdiscord.com%2Fapi%2Finvites%2FTgQ3Cu2F7A%3Fwith_counts%3Dtrue&query=%24.approximate_member_count&suffix=%20members&logo=discord&logoColor=white&label=%20&color=7389D8&labelColor=6A7EC2"></a>
   <a href="https://x.com/proj_airi"><img src="https://img.shields.io/badge/%40proj__airi-black?style=flat&logo=x&labelColor=%23101419&color=%232d2e30"></a>
   <a href="https://t.me/+7M_ZKO3zUHFlOThh"><img src="https://img.shields.io/badge/Telegram-%235AA9E6?logo=telegram&labelColor=FFFFFF"></a>
@@ -42,7 +42,7 @@
 
 > [!NOTE]
 >
-> Project AIRIから生まれたすべてのサブプロジェクト用に、専用の組織[@proj-airi](https://github.com/proj-airi)があります。ぜひチェックしてみてください！
+> Project NAVIから生まれたすべてのサブプロジェクト用に、専用の組織[@proj-navi](https://github.com/proj-airi)があります。ぜひチェックしてみてください！
 >
 > RAG、メモリシステム、組み込みデータベース、アイコン、Live2Dユーティリティなど多数あります！
 
@@ -54,21 +54,21 @@
 
 おそらく[Neuro-sama](https://www.youtube.com/@Neurosama)をすでに知っているでしょう。彼女は現在、ゲームをプレイし、チャットし、あなたや参加者（VTuberコミュニティ内）と対話できる最高のコンパニオンです。この種の存在を「デジタルヒューマン」と呼ぶ人もいます。**残念ながら、オープンソースではないため、ライブストリームがオフラインになった後は彼女と対話することはできません**。
 
-そのため、このプロジェクトAIRIは、ここで別の可能性を提供します：**簡単に、どこでも、いつでも、あなた自身のデジタルライフ、サイバー生活を所有できるようにします**。
+そのため、このプロジェクトNAVIは、ここで別の可能性を提供します：**簡単に、どこでも、いつでも、あなた自身のデジタルライフ、サイバー生活を所有できるようにします**。
 
 ## このプロジェクトの特別な点は何ですか？
 
-他のAI駆動のVTuberオープンソースプロジェクトとは異なり、アイリVTuberは開発初日から[WebGPU](https://www.w3.org/TR/webgpu/)、[WebAudio](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)、[Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)、[WebAssembly](https://webassembly.org/)、[WebSocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)などの多くのWeb技術をサポートしています。
+他のAI駆動のVTuberオープンソースプロジェクトとは異なり、ナビVTuberは開発初日から[WebGPU](https://www.w3.org/TR/webgpu/)、[WebAudio](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)、[Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)、[WebAssembly](https://webassembly.org/)、[WebSocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)などの多くのWeb技術をサポートしています。
 
-これは、**アイリVTuberが現代のブラウザやデバイスで動作可能である**ことを意味し、モバイルデバイスでも動作します（PWAサポート済み）。これにより、私たち（開発者）はアイリVTuberの力を次のレベルに引き上げるための多くの可能性を持ちつつ、ユーザーがTCP接続や他の非Web技術を必要とする機能を有効にする柔軟性を残しています。例えば、Discordのボイスチャネルに接続したり、MinecraftやFactorioを友達と一緒にプレイすることができます。
+これは、**ナビVTuberが現代のブラウザやデバイスで動作可能である**ことを意味し、モバイルデバイスでも動作します（PWAサポート済み）。これにより、私たち（開発者）はナビVTuberの力を次のレベルに引き上げるための多くの可能性を持ちつつ、ユーザーがTCP接続や他の非Web技術を必要とする機能を有効にする柔軟性を残しています。例えば、Discordのボイスチャネルに接続したり、MinecraftやFactorioを友達と一緒にプレイすることができます。
 
 > [!NOTE]
 >
-> 私たちはまだ開発の初期段階にあり、才能ある開発者を探しています。アイリVTuberを現実のものにするために私たちを助けてください。
+> 私たちはまだ開発の初期段階にあり、才能ある開発者を探しています。ナビVTuberを現実のものにするために私たちを助けてください。
 >
 > Vue.js、TypeScript、またはこのプロジェクトに必要な開発ツールに慣れていなくても大丈夫です。アーティスト、デザイナー、または最初のライブストリームを立ち上げる手助けをすることもできます。
 >
-> ReactやSvelte、Solidの大ファンであっても歓迎します。アイリVTuberに見たい機能を追加したり、実験したい機能を追加するためのサブディレクトリを開くことができます。
+> ReactやSvelte、Solidの大ファンであっても歓迎します。ナビVTuberに見たい機能を追加したり、実験したい機能を追加するためのサブディレクトリを開くことができます。
 >
 > 私たちが探している分野（および関連プロジェクト）：
 >
@@ -86,7 +86,7 @@
 > - Three.js
 > - WebXR（@moeru-ai組織の[別のプロジェクト](https://github.com/moeru-ai/chat)もチェックしてください）
 >
-> **興味があるなら、ここで自己紹介してみませんか？ [Would like to join part of us to build AIRI?](https://github.com/moeru-ai/airi/discussions/33)**
+> **興味があるなら、ここで自己紹介してみませんか？ [Would like to join part of us to build NAVI?](https://github.com/navichat/navi/discussions/33)**
 
 ## 現在の進捗
 
@@ -96,7 +96,7 @@
 
 - [x] 脳
   - [x] [Minecraft](https://www.minecraft.net)をプレイ
-  - [x] [Factorio](https://www.factorio.com)をプレイ（進行中ですが、[PoCとデモが利用可能](https://github.com/moeru-ai/airi-factorio)）
+  - [x] [Factorio](https://www.factorio.com)をプレイ（進行中ですが、[PoCとデモが利用可能](https://github.com/navichat/navi-factorio)）
   - [x] [Telegram](https://telegram.org)でチャット
   - [x] [Discord](https://discord.com)でチャット
   - [ ] メモリ
@@ -194,12 +194,12 @@ pnpm dev:docs
 - [`hfup`](https://github.com/moeru-ai/hfup): HuggingFace Spacesへのデプロイとバンドルを支援するツール
 - [`xsai-transformers`](https://github.com/moeru-ai/xsai-transformers): [xsAI](https://github.com/moeru-ai/xsai)のための実験的な[🤗 Transformers.js](https://github.com/huggingface/transformers.js)プロバイダー
 - [WebAI: Realtime Voice Chat](https://github.com/proj-airi/webai-realtime-voice-chat): VAD + STT + LLM + TTSを使用してChatGPTのリアルタイム音声をゼロから実装する完全な例
-- [`@proj-airi/drizzle-duckdb-wasm`](https://github.com/moeru-ai/airi/tree/main/packages/drizzle-duckdb-wasm/README.md): DuckDB WASMのDrizzle ORMドライバー
-- [`@proj-airi/duckdb-wasm`](https://github.com/moeru-ai/airi/tree/main/packages/duckdb-wasm/README.md): `@duckdb/duckdb-wasm`の使いやすいラッパー
-- [AIRI Factorio](https://github.com/moeru-ai/airi-factorio): AIRIがFactorioをプレイできるようにする
+- [`@proj-navi/drizzle-duckdb-wasm`](https://github.com/navichat/navi/tree/main/packages/drizzle-duckdb-wasm/README.md): DuckDB WASMのDrizzle ORMドライバー
+- [`@proj-navi/duckdb-wasm`](https://github.com/navichat/navi/tree/main/packages/duckdb-wasm/README.md): `@duckdb/duckdb-wasm`の使いやすいラッパー
+- [NAVI Factorio](https://github.com/navichat/navi-factorio): NAVIがFactorioをプレイできるようにする
 - [Factorio RCON API](https://github.com/nekomeowww/factorio-rcon-api): FactorioヘッドレスサーバーコンソールのRESTful APIラッパー
-- [`autorio`](https://github.com/moeru-ai/airi-factorio/tree/main/packages/autorio): Factorio自動化ライブラリ
-- [`tstl-plugin-reload-factorio-mod`](https://github.com/moeru-ai/airi-factorio/tree/main/packages/tstl-plugin-reload-factorio-mod): Factorioモッドの開発時にリロードをサポート
+- [`autorio`](https://github.com/navichat/navi-factorio/tree/main/packages/autorio): Factorio自動化ライブラリ
+- [`tstl-plugin-reload-factorio-mod`](https://github.com/navichat/navi-factorio/tree/main/packages/tstl-plugin-reload-factorio-mod): Factorioモッドの開発時にリロードをサポート
 - [Velin](https://github.com/luoling8192/velin): Vue SFCとMarkdownを使用してLLMのための管理しやすい状態のプロンプトを書く
 - [`demodel`](https://github.com/moeru-ai/demodel): さまざまな推論ランタイムからモデルやデータセットをデプロイ、バンドルするためのツール
 - [`inventory`](https://github.com/moeru-ai/inventory): 中央集権的なモデルカタログとデフォルトプロバイダー設定のバックエンドサービス
@@ -212,17 +212,17 @@ pnpm dev:docs
 flowchart TD
   Core("Core")
   Unspeech("unspeech")
-  DBDriver("@proj-airi/drizzle-duckdb-wasm")
+  DBDriver("@proj-navi/drizzle-duckdb-wasm")
   MemoryDriver("[WIP] メモリアラヤ")
-  DB1("@proj-airi/duckdb-wasm")
-  SVRT("@proj-airi/server-runtime")
+  DB1("@proj-navi/duckdb-wasm")
+  SVRT("@proj-navi/server-runtime")
   Memory("Memory")
   STT("STT")
   Stage("ステージ")
-  StageUI("@proj-airi/stage-ui")
-  UI("@proj-airi/ui")
+  StageUI("@proj-navi/stage-ui")
+  UI("@proj-navi/ui")
 
-  subgraph AIRI
+  subgraph NAVI
     DB1 --> DBDriver --> MemoryDriver --> Memory --> Core
     UI --> StageUI --> Stage --> Core
     Core --> STT
@@ -231,22 +231,22 @@ flowchart TD
 
   subgraph UI_Components
     UI --> StageUI
-    UITransitions("@proj-airi/ui-transitions") --> StageUI
-    UILoadingScreens("@proj-airi/ui-loading-screens") --> StageUI
-    FontCJK("@proj-airi/font-cjkfonts-allseto") --> StageUI
-    FontXiaolai("@proj-airi/font-xiaolai") --> StageUI
+    UITransitions("@proj-navi/ui-transitions") --> StageUI
+    UILoadingScreens("@proj-navi/ui-loading-screens") --> StageUI
+    FontCJK("@proj-navi/font-cjkfonts-allseto") --> StageUI
+    FontXiaolai("@proj-navi/font-xiaolai") --> StageUI
   end
 
   subgraph Apps
-    Stage --> StageWeb("@proj-airi/stage-web")
-    Stage --> StageTamagotchi("@proj-airi/stage-tamagotchi")
-    Core --> RealtimeAudio("@proj-airi/realtime-audio")
-    Core --> PromptEngineering("@proj-airi/playground-prompt-engineering")
+    Stage --> StageWeb("@proj-navi/stage-web")
+    Stage --> StageTamagotchi("@proj-navi/stage-tamagotchi")
+    Core --> RealtimeAudio("@proj-navi/realtime-audio")
+    Core --> PromptEngineering("@proj-navi/playground-prompt-engineering")
   end
 
   subgraph Server_Components
-    Core --> ServerSDK("@proj-airi/server-sdk")
-    ServerShared("@proj-airi/server-shared") --> SVRT
+    Core --> ServerSDK("@proj-navi/server-sdk")
+    ServerShared("@proj-navi/server-shared") --> SVRT
     ServerShared --> ServerSDK
   end
 
@@ -276,11 +276,11 @@ flowchart TD
   XSAI --> F_AGENT
   XSAI --> MC_AGENT
 
-  Core --> TauriMCP("@proj-airi/tauri-plugin-mcp")
-  Memory_PGVector("@proj-airi/memory-pgvector") --> Memory
+  Core --> TauriMCP("@proj-navi/tauri-plugin-mcp")
+  Memory_PGVector("@proj-navi/memory-pgvector") --> Memory
 
   style Core fill:#f9d4d4,stroke:#333,stroke-width:1px
-  style AIRI fill:#fcf7f7,stroke:#333,stroke-width:1px
+  style NAVI fill:#fcf7f7,stroke:#333,stroke-width:1px
   style UI fill:#d4f9d4,stroke:#333,stroke-width:1px
   style Stage fill:#d4f9d4,stroke:#333,stroke-width:1px
   style UI_Components fill:#d4f9d4,stroke:#333,stroke-width:1px
@@ -330,4 +330,4 @@ flowchart TD
 
 ## スター履歴
 
-[![Star History Chart](https://api.star-history.com/svg?repos=moeru-ai/airi&type=Date)](https://www.star-history.com/#moeru-ai/airi&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=navichat/navi&type=Date)](https://www.star-history.com/#navichat/navi&Date)

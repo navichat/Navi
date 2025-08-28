@@ -1,10 +1,10 @@
 [package]
 name = "app"
 version.workspace = true
-description = "AIRI tamagotchi app built with Tauri"
+description = "NAVI tamagotchi app built with Tauri"
 authors = [ "LemonNekoGH <self@lemonneko.moe>" ]
 license = "MIT"
-repository = "https://github.com/moeru-ai/airi"
+repository = "https://github.com/navichat/Navi"
 edition = "2024"
 rust-version = "1.85.0"
 publish = false

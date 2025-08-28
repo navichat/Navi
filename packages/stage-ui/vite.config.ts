@@ -13,7 +13,7 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   resolve: {
     alias: {
-      '@proj-airi/i18n': resolve(join(import.meta.dirname, '..', '..', 'packages', 'i18n', 'src')),
+      '@proj-navi/i18n': resolve(join(import.meta.dirname, '..', '..', 'packages', 'i18n', 'src')),
     },
   },
   server: {

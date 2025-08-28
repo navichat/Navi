@@ -1,17 +1,17 @@
 {
-  "name": "@proj-airi/server-sdk",
+  "name": "@proj-navi/server-sdk",
   "type": "module",
   "version": "0.7.2-beta.2",
-  "description": "Client-side SDK implementation for connecting to AIRI server components and runtimes",
+  "description": "Client-side SDK implementation for connecting to NAVI server components and runtimes",
   "author": {
-    "name": "Moeru AI Project AIRI Team",
-    "email": "airi@moeru.ai",
+    "name": "Moeru AI Project NAVI Team",
+    "email": "navi@navichat.ai",
     "url": "https://github.com/moeru-ai"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/moeru-ai/airi.git",
+    "url": "https://github.com/navichat/navi.git",
     "directory": "packages/server-sdk"
   },
   "exports": {
@@ -37,7 +37,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@proj-airi/server-shared": "workspace:^",
+    "@proj-navi/server-shared": "workspace:^",
     "crossws": "^0.4.1",
     "defu": "^6.1.4"
   },

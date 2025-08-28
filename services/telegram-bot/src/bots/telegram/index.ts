@@ -57,7 +57,7 @@ async function handleLoopStep(state: BotSelf, msgs?: LLMMessage[], chatId?: stri
     const length = msgs.length
     // pick the latest 5
     msgs = msgs.slice(-5)
-    msgs.push(message.user(`AIRI System: Approaching to system context limit, reducing... memory..., reduced from ${length} to ${msgs.length}, history may lost.`))
+    msgs.push(message.user(`NAVI System: Approaching to system context limit, reducing... memory..., reduced from ${length} to ${msgs.length}, history may lost.`))
   }
 
   try {
@@ -83,7 +83,7 @@ async function handleLoopStep(state: BotSelf, msgs?: LLMMessage[], chatId?: stri
         const stickerDescriptionsOneliner = stickerDescriptions.map(d => `Sticker File ID: ${d.file_id}, Description: ${d.description}`)
 
         if (stickerDescriptionsOneliner.length === 0) {
-          msgs.push(message.user('AIRI SYSTEM: No stickers found in the current memory partition, preload of stickers is required, please ask for help.'))
+          msgs.push(message.user('NAVI SYSTEM: No stickers found in the current memory partition, preload of stickers is required, please ask for help.'))
         }
         else {
           msgs.push(message.user(`List of stickers:\n${stickerDescriptionsOneliner}`))
@@ -127,7 +127,7 @@ async function handleLoopStep(state: BotSelf, msgs?: LLMMessage[], chatId?: stri
 
         const mentionedBy = unreadMessagesForThisChat.find(msg => msg.text?.includes(state.bot.botInfo.username) || msg.text?.includes(state.bot.botInfo.first_name))
         if (mentionedBy) {
-          msgs.push(message.user(`AIRI System: You were mentioned in a message: ${mentionedBy.text} by ${mentionedBy.from?.first_name} (${mentionedBy.from?.username}), please respond as much as possible.`))
+          msgs.push(message.user(`NAVI System: You were mentioned in a message: ${mentionedBy.text} by ${mentionedBy.from?.first_name} (${mentionedBy.from?.username}), please respond as much as possible.`))
         }
 
         // Modified interruption logic
@@ -156,7 +156,7 @@ async function handleLoopStep(state: BotSelf, msgs?: LLMMessage[], chatId?: stri
 
           if (shouldInterrupt) {
             state.logger.withField('action', action).log(`Interrupting message processing for chat - new messages deemed more important`)
-            msgs.push(message.user(`AIRI System: Interrupting message processing for chat - new messages deemed more important`))
+            msgs.push(message.user(`NAVI System: Interrupting message processing for chat - new messages deemed more important`))
             return () => handleLoopStep(state, msgs, chatId)
           }
           else {
@@ -207,7 +207,7 @@ async function handleLoopStep(state: BotSelf, msgs?: LLMMessage[], chatId?: stri
       case 'continue':
         return () => handleLoopStep(state, msgs, chatId)
       default:
-        msgs.push(message.user(`AIRI System: The action you sent ${action.action} haven't implemented yet by developer.`))
+        msgs.push(message.user(`NAVI System: The action you sent ${action.action} haven't implemented yet by developer.`))
         return () => handleLoopStep(state, msgs, chatId)
     }
   }

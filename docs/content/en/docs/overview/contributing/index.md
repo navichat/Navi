@@ -1,6 +1,6 @@
 ---
 title: Contributing
-description: Contributing to Project AIRI
+description: Contributing to Project NAVI
 ---
 
 Hello! Thank you for your interest in contributing to this project. This guide will help you get started.
@@ -117,7 +117,7 @@ git rebase main
 
 ## Fork this project
 
-Click on the **Fork** button on the top right corner of the [moeru-ai/airi](https://github.com/moeru-ai/airi) page.
+Click on the **Fork** button on the top right corner of the [navichat/navi](https://github.com/navichat/navi) page.
 
 ## Clone
 
@@ -178,7 +178,7 @@ nr dev:tamagotchi
 
 :::
 
-### Stage Web (Browser version for [airi.moeru.ai](https://airi.moeru.ai))
+### Stage Web (Browser version for [navi.navichat.ai](https://navi.navichat.ai))
 
 ```shell
 pnpm dev
@@ -230,14 +230,14 @@ Edit the credentials in `.env.local`.
 Migrate the database
 
 ```shell
-pnpm -F @proj-airi/telegram-bot db:generate
-pnpm -F @proj-airi/telegram-bot db:push
+pnpm -F @proj-navi/telegram-bot db:generate
+pnpm -F @proj-navi/telegram-bot db:push
 ```
 
 Run the bot
 
 ```shell
-pnpm -F @proj-airi/telegram-bot start
+pnpm -F @proj-navi/telegram-bot start
 ```
 
 ::: tip
@@ -245,7 +245,7 @@ pnpm -F @proj-airi/telegram-bot start
 For [@antfu/ni](https://github.com/antfu-collective/ni) users, you can
 
 ```shell
-nr -F @proj-airi/telegram-bot dev
+nr -F @proj-navi/telegram-bot dev
 ```
 
 :::
@@ -267,7 +267,7 @@ Edit the credentials in `.env.local`.
 Run the bot
 
 ```shell
-pnpm -F @proj-airi/discord-bot start
+pnpm -F @proj-navi/discord-bot start
 ```
 
 ::: tip
@@ -275,7 +275,7 @@ pnpm -F @proj-airi/discord-bot start
 For [@antfu/ni](https://github.com/antfu-collective/ni) users, you can
 
 ```shell
-nr -F @proj-airi/discord-bot dev
+nr -F @proj-navi/discord-bot dev
 ```
 
 :::
@@ -299,7 +299,7 @@ Edit the credentials in `.env.local`.
 Run the bot
 
 ```shell
-pnpm -F @proj-airi/minecraft-bot start
+pnpm -F @proj-navi/minecraft-bot start
 ```
 
 ::: tip
@@ -307,7 +307,7 @@ pnpm -F @proj-airi/minecraft-bot start
 For [@antfu/ni](https://github.com/antfu-collective/ni) users, you can
 
 ```shell
-nr -F @proj-airi/minecraft-bot dev
+nr -F @proj-navi/minecraft-bot dev
 ```
 
 :::
@@ -356,14 +356,14 @@ You should be able to browse the branch on your fork repository.
 If this is your first time contributing with this project, you need to add the upstream repository too:
 
 ```shell
-git remote add upstream https://github.com/moeru-ai/airi.git
+git remote add upstream https://github.com/navichat/navi.git
 ```
 
 :::
 
 ## Creating Pull Request
 
-Navigate to [moeru-ai/airi](https://github.com/moeru-ai/airi) page, click on the **Pull requests** tab, and click on the **New pull request** button, click on the **Compare across forks** link, and select your fork repository.
+Navigate to [navichat/navi](https://github.com/navichat/navi) page, click on the **Pull requests** tab, and click on the **New pull request** button, click on the **Compare across forks** link, and select your fork repository.
 
 Review the changes, and click on the **Create pull request** button.
 

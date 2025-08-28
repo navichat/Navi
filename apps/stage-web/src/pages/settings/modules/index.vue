@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { IconStatusItem } from '@proj-airi/stage-ui/components'
-import { useConsciousnessStore } from '@proj-airi/stage-ui/stores/modules/consciousness'
-import { useSpeechStore } from '@proj-airi/stage-ui/stores/modules/speech'
+import { IconStatusItem } from '@proj-navi/stage-ui/components'
+import { useConsciousnessStore } from '@proj-navi/stage-ui/stores/modules/consciousness'
+import { useSpeechStore } from '@proj-navi/stage-ui/stores/modules/speech'
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 

@@ -5,10 +5,10 @@ import type { UnElevenLabsOptions } from 'unspeech'
 import {
   SpeechPlayground,
   SpeechProviderSettings,
-} from '@proj-airi/stage-ui/components'
-import { useSpeechStore } from '@proj-airi/stage-ui/stores/modules/speech'
-import { useProvidersStore } from '@proj-airi/stage-ui/stores/providers'
-import { FieldRange } from '@proj-airi/ui'
+} from '@proj-navi/stage-ui/components'
+import { useSpeechStore } from '@proj-navi/stage-ui/stores/modules/speech'
+import { useProvidersStore } from '@proj-navi/stage-ui/stores/providers'
+import { FieldRange } from '@proj-navi/ui'
 import { computed, onMounted, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 
@@ -58,7 +58,7 @@ onMounted(async () => {
     const res = await fetch(`${baseUrl.endsWith('/') ? baseUrl.slice(0, -1) : baseUrl}/health`, {
       method: 'GET',
       headers: {
-        'player2-game-key': 'airi',
+        'player2-game-key': 'navi',
       },
     })
     hasPlayer2.value = res.status === 200

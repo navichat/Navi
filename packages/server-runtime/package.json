@@ -1,17 +1,17 @@
 {
-  "name": "@proj-airi/server-runtime",
+  "name": "@proj-navi/server-runtime",
   "type": "module",
   "version": "0.7.2-beta.2",
-  "description": "Server runtime implementation for AIRI running in different environments",
+  "description": "Server runtime implementation for NAVI running in different environments",
   "author": {
-    "name": "Moeru AI Project AIRI Team",
-    "email": "airi@moeru.ai",
+    "name": "Moeru AI Project NAVI Team",
+    "email": "navi@navichat.ai",
     "url": "https://github.com/moeru-ai"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/moeru-ai/airi.git",
+    "url": "https://github.com/navichat/navi.git",
     "directory": "packages/server-runtime"
   },
   "exports": {
@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "@guiiai/logg": "^1.0.10",
-    "@proj-airi/server-shared": "workspace:^",
+    "@proj-navi/server-shared": "workspace:^",
     "crossws": "^0.4.1",
     "h3": "^1.15.4",
     "listhen": "^1.9.0"

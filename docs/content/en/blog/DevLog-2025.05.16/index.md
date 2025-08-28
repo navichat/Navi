@@ -26,10 +26,10 @@ import DemoDayHangzhou3 from './assets/demo-day-hangzhou-3.avif'
 </script>
 
 Hello again! Here's [Neko](https://github.com/nekomeowww), the girl who started
-the [Project AIRI](https://github.com/moeru-ai/airi)!
+the [Project NAVI](https://github.com/navichat/navi)!
 
 Sorry for being late for new update in
-Project AIRI through the posted DevLog, please forgive us
+Project NAVI through the posted DevLog, please forgive us
 for the delay.
 
 > We wrote many fantastic DevLogs about our development
@@ -45,7 +45,7 @@ for the delay.
 
 # Dejavu
 
-For the past few weeks, the major quests of Project AIRI itself
+For the past few weeks, the major quests of Project NAVI itself
 haven't progressed for a while, perhaps I was quite burned
 out from the huge UI refactoring and release since March
 2025. Most of the work was done by community maintainers,
@@ -95,7 +95,7 @@ For Character Card showcases, we tried some approaches too...
 <img class="light" :src="CharacterCardShowcaseLight" alt="a card like user interface design for a blue hair character called ReLU" />
 <img class="dark" :src="CharacterCardShowcaseDark" alt="a card like user interface design for a blue hair character called ReLU" />
 
-It's live in our UI component library, you can play around with it: https://airi.moeru.ai/ui/#/story/src-components-menu-charactercard-story-vue .
+It's live in our UI component library, you can play around with it: https://navi.navichat.ai/ui/#/story/src-components-menu-charactercard-story-vue .
 
 > Pure CSS and JavaScript controlled, layout works so we don't need to worry about the canvas calculation.
 >
@@ -114,7 +114,7 @@ You can read them here:
 - [Controls Android](./DevLog-2025.04.22.mdx)
 - [MCP in Tauri](./DevLog-2025.04.28.md)
 
-## Project AIRI major quests
+## Project NAVI major quests
 
 ### Ears listening, and mouth speaking
 
@@ -209,7 +209,7 @@ one for my own.
 
 I did some small experiments on integrating a WebGPU powered background
 remover right in the system, you can play around with it here in
-[https://airi.moeru.ai/devtools/background-remove](https://airi.moeru.ai/devtools/background-remove).
+[https://navi.navichat.ai/devtools/background-remove](https://navi.navichat.ai/devtools/background-remove).
 
 ### xsAI & unSpeech
 
@@ -218,11 +218,11 @@ provider, quite useful I guess?
 
 ### UI
 
-- New [Tutorial stepper](https://airi.moeru.ai/ui/#/story/src-components-misc-steppers-steppers-story-vue?variantId=src-components-misc-steppers-steppers-story-vue-0), [File upload](https://airi.moeru.ai/ui/#/story/src-components-form-input-inputfile-story-vue?variantId=default), and [Textarea](https://airi.moeru.ai/ui/#/story/src-components-form-textarea-textarea-story-vue?variantId=default) component
+- New [Tutorial stepper](https://navi.navichat.ai/ui/#/story/src-components-misc-steppers-steppers-story-vue?variantId=src-components-misc-steppers-steppers-story-vue-0), [File upload](https://navi.navichat.ai/ui/#/story/src-components-form-input-inputfile-story-vue?variantId=default), and [Textarea](https://navi.navichat.ai/ui/#/story/src-components-form-textarea-textarea-story-vue?variantId=default) component
 - Color issues
-- [Typography improved](https://airi.moeru.ai/ui/#/story/stories-typographysans-story-vue?)
+- [Typography improved](https://navi.navichat.ai/ui/#/story/stories-typographysans-story-vue?)
 
-More of the stories can be found at [Roadmap v0.5](https://github.com/moeru-ai/airi/issues/113)
+More of the stories can be found at [Roadmap v0.5](https://github.com/navichat/navi/issues/113)
 
 ## Side-quests
 
@@ -281,7 +281,7 @@ The slides I used to share was this:
 <img :src="DemoDayHangzhou3" alt="Demo Day @ Hangzhou" />
 
 The slides itself is purely open sourced, you can play around
-it here too: [https://talks.ayaka.io/nekoayaka/2025-05-10-airi-how-we-recreated-it/#/1](https://talks.ayaka.io/nekoayaka/2025-05-10-airi-how-we-recreated-it/#/1)
+it here too: [https://talks.ayaka.io/nekoayaka/2025-05-10-navi-how-we-recreated-it/#/1](https://talks.ayaka.io/nekoayaka/2025-05-10-navi-how-we-recreated-it/#/1)
 
 ## Milestones
 
@@ -294,7 +294,7 @@ I would love to mention some of the milestone we reached in the past few weeks:
 - ReLU character design finished!
 - ReLU character modeling finished!
 - Negotiated with a few companies for sponsorships, and cooperation!
-- 92 tasks finished for [Roadmap v0.5](https://github.com/moeru-ai/airi/issues/113)
+- 92 tasks finished for [Roadmap v0.5](https://github.com/navichat/navi/issues/113)
   - UI
     - Loading screen and tutorial modules
     - Multiple bug fixes including loading states and Firefox compatibility issues

@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import type { CommonContentPart } from '@xsai/shared-chat'
 
-import { MarkdownRenderer } from '@proj-airi/stage-ui/components'
-import { useChatStore } from '@proj-airi/stage-ui/stores/chat'
+import { MarkdownRenderer } from '@proj-navi/stage-ui/components'
+import { useChatStore } from '@proj-navi/stage-ui/stores/chat'
 import { storeToRefs } from 'pinia'
 import { nextTick, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
@@ -64,7 +64,7 @@ onTokenLiteral(async () => {
           rounded-lg px-2 py-1 h="unset <sm:fit" bg="<md:primary-500/25"
         >
           <div>
-            <span text-xs text="primary-400/90 dark:primary-600/90" font-normal class="inline <sm:hidden">{{ t('stage.chat.message.character-name.airi') }}</span>
+            <span text-xs text="primary-400/90 dark:primary-600/90" font-normal class="inline <sm:hidden">{{ t('stage.chat.message.character-name.navi') }}</span>
           </div>
           <div class="break-words" text="xs primary-400">
             <div v-for="(slice, sliceIndex) in message.slices" :key="sliceIndex">
@@ -118,7 +118,7 @@ onTokenLiteral(async () => {
         rounded-lg px-2 py-1 h="unset <sm:fit" bg="<md:primary-500/25"
       >
         <div>
-          <span text-xs text="primary-400/90 dark:primary-600/90" font-normal class="inline <sm:hidden">{{ t('stage.chat.message.character-name.airi') }}</span>
+          <span text-xs text="primary-400/90 dark:primary-600/90" font-normal class="inline <sm:hidden">{{ t('stage.chat.message.character-name.navi') }}</span>
         </div>
         <div v-if="streamingMessage.content" class="break-words" text="xs primary-400">
           <div v-for="(slice, sliceIndex) in streamingMessage.slices" :key="sliceIndex">

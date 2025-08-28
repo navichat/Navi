@@ -1,17 +1,17 @@
 {
-  "name": "@proj-airi/discord-bot",
+  "name": "@proj-navi/discord-bot",
   "type": "module",
   "private": true,
-  "description": "Discord bot for AIRI",
+  "description": "Discord bot for NAVI",
   "author": {
-    "name": "Moeru AI Project AIRI Team",
-    "email": "airi@moeru.ai",
+    "name": "Navi Team",
+    "email": "navi@navichat.ai",
     "url": "https://github.com/moeru-ai"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/moeru-ai/airi.git",
+    "url": "https://github.com/navichat/navi.git",
     "directory": "services/discord-bot"
   },
   "scripts": {
@@ -23,9 +23,9 @@
     "@dotenvx/dotenvx": "^1.48.4",
     "@guiiai/logg": "^1.0.10",
     "@huggingface/transformers": "^3.7.0",
-    "@proj-airi/audio": "workspace:^",
-    "@proj-airi/server-sdk": "workspace:^",
-    "@proj-airi/server-shared": "workspace:^",
+    "@proj-navi/audio": "workspace:^",
+    "@proj-navi/server-sdk": "workspace:^",
+    "@proj-navi/server-shared": "workspace:^",
     "@xsai-ext/providers-cloud": "catalog:",
     "@xsai/generate-speech": "catalog:",
     "@xsai/generate-text": "catalog:",

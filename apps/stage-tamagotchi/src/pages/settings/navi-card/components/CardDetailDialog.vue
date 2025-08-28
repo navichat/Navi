@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { AiriCard } from '@proj-airi/stage-ui/stores/modules/airi-card'
+import type { NaviCard } from '@proj-navi/stage-ui/stores/modules/navi-card'
 
-import { Button } from '@proj-airi/stage-ui/components'
-import { useAiriCardStore } from '@proj-airi/stage-ui/stores/modules/airi-card'
+import { Button } from '@proj-navi/stage-ui/components'
+import { useNaviCardStore } from '@proj-navi/stage-ui/stores/modules/navi-card'
 import { storeToRefs } from 'pinia'
 import {
   DialogContent,
@@ -27,12 +27,12 @@ const emit = defineEmits<{
 }>()
 
 const { t } = useI18n()
-const cardStore = useAiriCardStore()
+const cardStore = useNaviCardStore()
 const { removeCard } = cardStore
 const { activeCardId } = storeToRefs(cardStore)
 
 // Get selected card data
-const selectedCard = computed<AiriCard | undefined>(() => {
+const selectedCard = computed<NaviCard | undefined>(() => {
   if (!props.cardId)
     return undefined
   return cardStore.getCard(props.cardId)
@@ -40,7 +40,7 @@ const selectedCard = computed<AiriCard | undefined>(() => {
 
 // Get module settings
 const moduleSettings = computed(() => {
-  if (!selectedCard.value || !selectedCard.value.extensions?.airi?.modules) {
+  if (!selectedCard.value || !selectedCard.value.extensions?.navi?.modules) {
     return {
       consciousness: '',
       speech: '',
@@ -48,11 +48,11 @@ const moduleSettings = computed(() => {
     }
   }
 
-  const airiExt = selectedCard.value.extensions.airi.modules
+  const naviExt = selectedCard.value.extensions.navi.modules
   return {
-    consciousness: airiExt.consciousness?.model || '',
-    speech: airiExt.speech?.model || '',
-    voice: airiExt.speech?.voice_id || '',
+    consciousness: naviExt.consciousness?.model || '',
+    speech: naviExt.speech?.model || '',
+    voice: naviExt.speech?.voice_id || '',
   }
 })
 

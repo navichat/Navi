@@ -11,7 +11,7 @@ import { useQueue } from '../composables'
 import { useLlmmarkerParser } from '../composables/llmmarkerParser'
 import { useLLM } from '../stores/llm'
 import { TTS_FLUSH_INSTRUCTION } from '../utils/tts'
-import { useAiriCardStore } from './modules'
+import { useNaviCardStore } from './modules'
 
 export interface ErrorMessage {
   role: 'error'
@@ -20,7 +20,7 @@ export interface ErrorMessage {
 
 export const useChatStore = defineStore('chat', () => {
   const { stream, discoverToolsCompatibility } = useLLM()
-  const { systemPrompt } = storeToRefs(useAiriCardStore())
+  const { systemPrompt } = storeToRefs(useNaviCardStore())
 
   const sending = ref(false)
 

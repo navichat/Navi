@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { DisplayModel } from '../../../../stores/display-models'
 
-import { BasicInputFile } from '@proj-airi/ui'
+import { BasicInputFile } from '@proj-navi/ui'
 import { storeToRefs } from 'pinia'
 import { DropdownMenuContent, DropdownMenuItem, DropdownMenuPortal, DropdownMenuRoot, DropdownMenuTrigger, EditableArea, EditableEditTrigger, EditableInput, EditablePreview, EditableRoot, EditableSubmitTrigger } from 'reka-ui'
 import { ref, watch } from 'vue'

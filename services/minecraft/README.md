@@ -1,10 +1,10 @@
-# ⛏️ Minecraft agent player for [アイリ (AIRI)](https://airi.moeru.ai)
+# ⛏️ Minecraft agent player for [ナビ (NAVI)](https://navi.navichat.ai)
 
 > [!NOTE]
 >
-> This project is part of the [Project アイリ (AIRI)](https://github.com/moeru-ai/airi), we aim to build a LLM-driven VTuber like [Neuro-sama](https://www.youtube.com/@Neurosama) (subscribe if you didn't!) if you are interested in, please do give it a try on [live demo](https://airi.moeru.ai).
+> This project is part of the [Project ナビ (NAVI)](https://github.com/navichat/navi), we aim to build a LLM-driven VTuber like [Neuro-sama](https://www.youtube.com/@Neurosama) (subscribe if you didn't!) if you are interested in, please do give it a try on [live demo](https://navi.navichat.ai).
 
-An intelligent Minecraft bot powered by LLM. AIRI can understand natural language commands, interact with the world, and assist players in various tasks.
+An intelligent Minecraft bot powered by LLM. NAVI can understand natural language commands, interact with the world, and assist players in various tasks.
 
 ## 🎥 Preview
 
@@ -34,7 +34,7 @@ An intelligent Minecraft bot powered by LLM. AIRI can understand natural languag
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/moeru-ai/airi.git
+git clone https://github.com/navichat/navi.git
 cd services/minecraft
 ```
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { CursorFloating } from '@proj-airi/stage-ui/components'
+import { CursorFloating } from '@proj-navi/stage-ui/components'
 
 interface Props {
   id: string

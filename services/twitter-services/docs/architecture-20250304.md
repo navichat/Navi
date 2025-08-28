@@ -19,7 +19,7 @@ Twitter Service is a web automation service based on BrowserBase, providing stru
 │                                             │
 │   ┌────────────┐         ┌─────────────┐    │
 │   │            │         │             │    │
-│   │  AIRI Core │         │ Other LLM   │    │
+│   │  NAVI Core │         │ Other LLM   │    │
 │   │            │         │ Applications│    │
 │   │            │         │             │    │
 │   └──────┬─────┘         └──────┬──────┘    │
@@ -29,7 +29,7 @@ Twitter Service is a web automation service based on BrowserBase, providing stru
 │                  Adapter Layer              │
 │                                             │
 │   ┌────────────┐         ┌─────────────┐    │
-│   │AIRI Adapter│         │ MCP Adapter │    │
+│   │NAVI Adapter│         │ MCP Adapter │    │
 │   │(@server-sdk)│        │ (HTTP/JSON) │    │
 │   └──────┬─────┘         └──────┬──────┘    │
 └──────────┼─────────────────────┼────────────┘
@@ -68,7 +68,7 @@ Twitter Service is a web automation service based on BrowserBase, providing stru
 - **Browser Automation**: BrowserBase Stagehand, Playwright
 - **HTML Parsing**: unified, rehype-parse, unist-util-visit
 - **API Server**: H3.js, listhen
-- **Adapters**: AIRI Server SDK, MCP SDK
+- **Adapters**: NAVI Server SDK, MCP SDK
 - **Logging System**: @guiiai/logg
 - **Configuration**: defu (deep merging configurations)
 - **Utility Library**: zod (type validation)
@@ -77,9 +77,9 @@ Twitter Service is a web automation service based on BrowserBase, providing stru
 
 ### 5.1 Adapter Layer
 
-#### 5.1.1 AIRI Adapter
+#### 5.1.1 NAVI Adapter
 
-Provides integration with the AIRI LLM platform, handling event-driven communication.
+Provides integration with the NAVI LLM platform, handling event-driven communication.
 
 #### 5.1.2 MCP Adapter
 
@@ -205,7 +205,7 @@ interface Config {
 
   // Adapter configuration
   adapters: {
-    airi?: {
+    navi?: {
       url?: string
       token?: string
       enabled: boolean
@@ -291,27 +291,27 @@ async function main() {
 }
 ```
 
-### 9.2 Integrating as AIRI Module
+### 9.2 Integrating as NAVI Module
 
 ```typescript
-import { AIRIAdapter, BrowserBaseMCPAdapter, TwitterService } from 'twitter-services'
+import { NaviAdapter, BrowserBaseMCPAdapter, TwitterService } from 'twitter-services'
 
-async function startAIRIModule() {
+async function startNaviModule() {
   const browser = new BrowserBaseMCPAdapter(process.env.BROWSERBASE_API_KEY)
   await browser.initialize({ headless: true })
 
   const twitter = new TwitterService(browser)
 
-  // Create AIRI adapter
-  const airiAdapter = new AIRIAdapter(twitter, {
-    url: process.env.AIRI_URL,
-    token: process.env.AIRI_TOKEN
+  // Create NAVI adapter
+  const naviAdapter = new NaviAdapter(twitter, {
+    url: process.env.NAVI_URL,
+    token: process.env.NAVI_TOKEN
   })
 
   // Start adapter
-  await airiAdapter.start()
+  await naviAdapter.start()
 
-  console.log('Twitter service running as AIRI module')
+  console.log('Twitter service running as NAVI module')
 }
 ```
 

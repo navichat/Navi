@@ -1,6 +1,6 @@
 import type { DisplayModel } from './display-models'
 
-import messages from '@proj-airi/i18n/locales'
+import messages from '@proj-navi/i18n/locales'
 
 import { useEventListener, useLocalStorage } from '@vueuse/core'
 import { converter } from 'culori'

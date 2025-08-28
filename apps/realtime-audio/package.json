@@ -1,17 +1,17 @@
 {
-  "name": "@proj-airi/realtime-audio",
+  "name": "@proj-navi/realtime-audio",
   "type": "module",
   "private": true,
   "description": "Realtime audio",
   "author": {
-    "name": "Moeru AI Project AIRI Team",
-    "email": "airi@moeru.ai",
+    "name": "Moeru AI Project NAVI Team",
+    "email": "navi@navichat.ai",
     "url": "https://github.com/moeru-ai"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/moeru-ai/airi.git",
+    "url": "https://github.com/navichat/navi.git",
     "directory": "apps/realtime-audio"
   },
   "scripts": {

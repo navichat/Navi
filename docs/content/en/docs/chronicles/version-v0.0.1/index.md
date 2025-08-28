@@ -217,8 +217,8 @@ Now can:
 
 ### Code repository & architecture
 
-- [x] [Migrate to SPA](https://github.com/nekomeowww/airi-vtuber/commit/cd0f371595a669c570dc263e72dd3ce54afab7ff)
-- [x] [Migrate to Monorepo](https://github.com/nekomeowww/airi-vtuber/commit/ee4878710eeded6ef1b66474905936353d0176b4)
+- [x] [Migrate to SPA](https://github.com/nekomeowww/navi-vtuber/commit/cd0f371595a669c570dc263e72dd3ce54afab7ff)
+- [x] [Migrate to Monorepo](https://github.com/nekomeowww/navi-vtuber/commit/ee4878710eeded6ef1b66474905936353d0176b4)
 - [x] Unify to moeru-ai organization
 
 ### Interaction optimization

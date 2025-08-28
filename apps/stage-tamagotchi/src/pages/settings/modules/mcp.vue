@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import type { Tool } from '@proj-airi/tauri-plugin-mcp'
+import type { Tool } from '@proj-navi/tauri-plugin-mcp'
 
-import { useMcpStore } from '@proj-airi/stage-ui/stores/mcp'
-import { connectServer, disconnectServer, listTools } from '@proj-airi/tauri-plugin-mcp'
+import { useMcpStore } from '@proj-navi/stage-ui/stores/mcp'
+import { connectServer, disconnectServer, listTools } from '@proj-navi/tauri-plugin-mcp'
 import {
   FieldInput,
-} from '@proj-airi/ui'
+} from '@proj-navi/ui'
 import { storeToRefs } from 'pinia'
 import { ref } from 'vue'
 
@@ -68,7 +68,7 @@ async function getTools() {
             type="text"
             label="Server Arguments"
             description="Enter the server command arguments"
-            placeholder="run -i --rm -e ADB_HOST=host.docker.internal ghcr.io/lemonnekogh/airi-android:v0.1.0"
+            placeholder="run -i --rm -e ADB_HOST=host.docker.internal ghcr.io/lemonnekogh/navi-android:v0.1.0"
             :disabled="connecting || connected"
           />
 

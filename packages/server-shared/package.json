@@ -1,17 +1,17 @@
 {
-  "name": "@proj-airi/server-shared",
+  "name": "@proj-navi/server-shared",
   "type": "module",
   "version": "0.7.2-beta.2",
-  "description": "Server shared types, utilities for AIRI server components and runtimes",
+  "description": "Server shared types, utilities for NAVI server components and runtimes",
   "author": {
-    "name": "Moeru AI Project AIRI Team",
-    "email": "airi@moeru.ai",
+    "name": "Moeru AI Project NAVI Team",
+    "email": "navi@navichat.ai",
     "url": "https://github.com/moeru-ai"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/moeru-ai/airi.git",
+    "url": "https://github.com/navichat/navi.git",
     "directory": "packages/server-shared"
   },
   "exports": {

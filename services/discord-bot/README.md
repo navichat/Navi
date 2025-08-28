@@ -1,11 +1,11 @@
 # `discord-bot`
 
-Allow アイリ to talk to you and many other users in Discord voice channels.
+Allow ナビ to talk to you and many other users in Discord voice channels.
 
 ## Getting started
 
 ```shell
-git clone git@github.com:moeru-ai/airi.git
+git clone git@github.com:navichat/navi.git
 pnpm i
 ```
 
@@ -31,7 +31,7 @@ ELEVENLABS_API_BASE_URL=''
 ```
 
 ```shell
-pnpm run -F @proj-airi/discord-bot start
+pnpm run -F @proj-navi/discord-bot start
 ```
 
 ## Other similar projects

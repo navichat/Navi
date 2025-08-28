@@ -23,7 +23,7 @@ export interface Config {
 
   // Adapter configuration
   adapters: {
-    airi?: {
+    navi?: {
       url?: string
       token?: string
       enabled: boolean
@@ -72,10 +72,10 @@ export function getDefaultConfig(): Config {
       },
     },
     adapters: {
-      airi: {
-        url: process.env.AIRI_URL || 'http://localhost:3000',
-        token: process.env.AIRI_TOKEN || '',
-        enabled: process.env.ENABLE_AIRI === 'true',
+      navi: {
+        url: process.env.NAVI_URL || 'http://localhost:3000',
+        token: process.env.NAVI_TOKEN || '',
+        enabled: process.env.ENABLE_NAVI === 'true',
       },
       mcp: {
         port: Number(process.env.MCP_PORT || 8080),

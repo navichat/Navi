@@ -51,7 +51,7 @@ interface Events {
   'tauri://drag-leave': unknown
 }
 
-export interface AiriTamagotchiEvents extends Events {
+export interface NaviTamagotchiEvents extends Events {
   // from main
   'tauri-main:main:window-mode:fade-on-hover': true
   'tauri-main:main:window-mode:move': true

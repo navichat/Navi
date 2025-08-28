@@ -17,7 +17,7 @@ const toggleDark = useToggle(isDark)
           <div v-if="isDark" i-solar:moon-stars-bold-duotone />
           <div v-else i-solar:sun-bold />
         </button>
-        <a href="https://github.com/moeru-ai/airi/tree/main/apps/realtime-audio">
+        <a href="https://github.com/navichat/Navi/tree/main/apps/realtime-audio">
           <div i-simple-icons:github />
         </a>
       </div>

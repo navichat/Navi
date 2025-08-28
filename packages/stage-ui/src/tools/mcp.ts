@@ -1,4 +1,4 @@
-import { callTool, connectServer, disconnectServer, listTools } from '@proj-airi/tauri-plugin-mcp'
+import { callTool, connectServer, disconnectServer, listTools } from '@proj-navi/tauri-plugin-mcp'
 import { tool } from '@xsai/tool'
 import { z } from 'zod'
 

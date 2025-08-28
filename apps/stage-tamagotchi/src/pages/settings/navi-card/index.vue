@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import type { ccv3 } from '@proj-airi/ccc'
+import type { ccv3 } from '@proj-navi/ccc'
 
-import { Alert } from '@proj-airi/stage-ui/components'
-import { useAiriCardStore } from '@proj-airi/stage-ui/stores/modules/airi-card'
-import { InputFile } from '@proj-airi/ui'
-import { Select } from '@proj-airi/ui/components/form'
+import { Alert } from '@proj-navi/stage-ui/components'
+import { useNaviCardStore } from '@proj-navi/stage-ui/stores/modules/navi-card'
+import { InputFile } from '@proj-navi/ui'
+import { Select } from '@proj-navi/ui/components/form'
 import { storeToRefs } from 'pinia'
 import { computed, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
@@ -16,7 +16,7 @@ import CardListItem from './components/CardListItem.vue'
 import DeleteCardDialog from './components/DeleteCardDialog.vue'
 
 const { t } = useI18n()
-const cardStore = useAiriCardStore()
+const cardStore = useNaviCardStore()
 const { addCard, removeCard } = cardStore
 const { cards, activeCardId } = storeToRefs(cardStore)
 
@@ -138,16 +138,16 @@ function getVersionNumber(id: string) {
 // Card module short name
 function getModuleShortName(id: string, module: 'consciousness' | 'voice') {
   const card = cards.value.get(id)
-  if (!card || !card.extensions?.airi?.modules)
+  if (!card || !card.extensions?.navi?.modules)
     return 'default'
 
-  const airiExt = card.extensions.airi.modules
+  const naviExt = card.extensions.navi.modules
 
   if (module === 'consciousness') {
-    return airiExt.consciousness?.model ? airiExt.consciousness.model.split('-').pop() || 'default' : 'default'
+    return naviExt.consciousness?.model ? naviExt.consciousness.model.split('-').pop() || 'default' : 'default'
   }
   else if (module === 'voice') {
-    return airiExt.speech?.voice_id || 'default'
+    return naviExt.speech?.voice_id || 'default'
   }
 
   return 'default'
@@ -256,7 +256,11 @@ function getModuleShortName(id: string, module: 'consciousness' | 'voice') {
       </div>
 
       <!-- No search results -->
-      <Alert v-if="searchQuery && sortedFilteredCards.length === 0" type="warning">
+      <Alert
+        v-if="searchQuery && sortedFilteredCards.length === 0"
+        type="warning"
+        class="col-span-full"
+      >
         <template #title>
           {{ t('settings.pages.card.no_results') }}
         </template>
